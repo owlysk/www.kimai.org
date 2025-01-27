@@ -1,0 +1,498 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="msapplication-TileColor" content="#2d89ef">
+    <meta name="theme-color" content="#4188c9">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="robots" content="index,follow">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://www.kimai.org/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://www.kimai.org/images/icon_32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://www.kimai.org/images/icon_16x16.png">
+    <title>Quickstart for Kimai API (JSON / REST)</title>
+    <meta name="description" content="Access your time-tracking data via the JSON API with Kimai">
+    <meta property="og:description" content="Access your time-tracking data via the JSON API with Kimai">
+    <meta name="twitter:description" content="Access your time-tracking data via the JSON API with Kimai">
+    <link type="application/atom+xml" rel="alternate" href="https://www.kimai.org/feed.xml" title="Kimai Time-Tracking" />
+    <meta property="og:locale" content="en">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Kimai Time-Tracking">
+    <meta property="og:image" content="https://www.kimai.org/images/social-preview.webp">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Kimai Time-Tracking">
+    <meta name="twitter:site" content="@kimai_org">
+    <meta name="twitter:image" content="https://www.kimai.org/images/social-preview.webp">
+    <link href="/assets/build/main.css?v6" rel="stylesheet" />
+</head>
+<body class="">
+
+
+
+
+
+
+
+
+
+
+
+<header class="header navbar navbar-expand bg-light border-bottom border-light shadow fixed-top" data-scroll-header>
+    <div class="container-fluid pe-lg-4">
+        <div class="d-flex align-items-center">
+            <a href="/" class="navbar-brand flex-shrink-0 py-1 py-lg-2">
+                <img src="/images/apple-touch-icon.png" width="32" alt="Kimai logo" class="me-2">
+                Kimai Docs
+            </a>
+            <span class="badge bg-warning">Developer</span>
+        </div>
+        <div class="d-flex align-items-center w-100">
+            <ul class="navbar-nav d-none d-lg-flex" style="padding-left: 6.75rem;">
+                
+                    
+                    
+                    <li class="nav-item">
+                        <a href="/documentation/chapter-manual.html" class="nav-link ">
+                            <i class="bx bx-book opacity-70 fs-lg me-1"></i>
+                            User manual
+                        </a>
+                    </li>
+                
+                    
+                    
+                    <li class="nav-item">
+                        <a href="/documentation/cloud.html" class="nav-link ">
+                            <i class="bx bx-cloud opacity-70 fs-lg me-1"></i>
+                            Kimai-Cloud
+                        </a>
+                    </li>
+                
+                    
+                    
+                    <li class="nav-item">
+                        <a href="/documentation/chapter-on-premise.html" class="nav-link ">
+                            <i class="bx bx-server opacity-70 fs-lg me-1"></i>
+                            On-Premise
+                        </a>
+                    </li>
+                
+                    
+                    
+                    <li class="nav-item">
+                        <a href="/documentation/chapter-developer.html" class="nav-link  active">
+                            <i class="bx bx-code-alt opacity-70 fs-lg me-1"></i>
+                            Developer
+                        </a>
+                    </li>
+                
+            </ul>
+            <button type="button" class="navbar-toggler d-block d-lg-none ms-auto me-4" data-bs-toggle="offcanvas" data-bs-target="#componentsNav" aria-controls="componentsNav" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+    </div>
+</header>
+
+<aside class="bg-dark">
+    <div id="componentsNav" class="offcanvas-lg offcanvas-start d-flex flex-column position-fixed top-0 start-0 vh-100 bg-dark border-end-lg" style="width: 19rem; z-index: 1045;">
+        <div class="offcanvas-header d-none d-lg-flex justify-content-start">
+            <a href="/" class="navbar-brand d-none d-lg-flex py-0">
+                <img src="/images/apple-touch-icon.png" width="26" alt="Kimai logo" class="me-3">
+                Kimai Docs
+            </a>
+        </div>
+        <div class="offcanvas-header d-block d-lg-none border-bottom">
+            <div class="d-flex align-items-center justify-content-between mb-3">
+                <h5 class="d-lg-none mb-0">Menu</h5>
+                <button type="button" class="btn-close d-lg-none" data-bs-dismiss="offcanvas" data-bs-target="#componentsNav" aria-label="Close"></button>
+            </div>
+            <div class="list-group list-group-flush mx-n4">
+                
+                    
+                    
+                    <a href="/documentation/chapter-manual.html" class="list-group-item list-group-item-action d-flex align-items-center border-0 py-1 px-4">
+                        <i class="bx bx-book opacity-70 me-1"></i>
+                        User manual
+                    </a>
+                
+                    
+                    
+                    <a href="/documentation/cloud.html" class="list-group-item list-group-item-action d-flex align-items-center border-0 py-1 px-4">
+                        <i class="bx bx-cloud opacity-70 me-1"></i>
+                        Kimai-Cloud
+                    </a>
+                
+                    
+                    
+                    <a href="/documentation/chapter-on-premise.html" class="list-group-item list-group-item-action d-flex align-items-center border-0 py-1 px-4">
+                        <i class="bx bx-server opacity-70 me-1"></i>
+                        On-Premise
+                    </a>
+                
+                    
+                    
+                    <a href="/documentation/chapter-developer.html" class="list-group-item list-group-item-action d-flex align-items-center border-0 py-1 px-4">
+                        <i class="bx bx-code-alt opacity-70 me-1"></i>
+                        Developer
+                    </a>
+                
+            </div>
+        </div>
+        <div class="offcanvas-body overflow-scroll w-100 p-4">
+            <div class="h-auto docsnavi">
+                
+                    
+                    
+                    
+                    
+                    <p class="fs-lg mb-1 text-white fw-bold">JSON API</p>
+                    <div class="list-group list-group-flush mb-4 me-n4 border-start">
+                        
+                        
+                        
+                        
+                        <a href="/documentation/rest-api.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2  active" id="docnavi-rest-api">
+                            
+                            Kimai API
+                            
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="/documentation/rest-api-examples.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-rest-api-examples">
+                            
+                            Examples
+                            
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="/documentation/api-pagination.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-api-pagination">
+                            
+                            Pagination
+                            
+                        </a>
+                        
+                        
+                    </div>
+                    
+                    
+                    
+                    <p class="fs-lg mb-1 text-white fw-bold">Create plugins</p>
+                    <div class="list-group list-group-flush mb-4 me-n4 border-start">
+                        
+                        
+                        
+                        
+                        <a href="/documentation/developers.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-developers">
+                            
+                            Development environment
+                            
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="/documentation/extending-kimai.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-extending-kimai">
+                            
+                            Extending Kimai
+                            
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="/documentation/plugins.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-plugins">
+                            
+                            Create plugins
+                            
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="/documentation/translations.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-translations">
+                            
+                            Translations / i18n
+                            
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="/documentation/meta-fields.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-meta-fields">
+                            
+                            Custom fields
+                            
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="/documentation/theme.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-theme">
+                            
+                            Theme
+                            
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="/documentation/store.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-store">
+                            
+                            Add to store
+                            
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="/documentation/migration-v2.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-migration-v2">
+                            
+                            Migrate plugins to v2
+                            
+                        </a>
+                        
+                        
+                    </div>
+                    
+                    
+                    
+                    <p class="fs-lg mb-1 text-white fw-bold">Technical background</p>
+                    <div class="list-group list-group-flush mb-4 me-n4 border-start">
+                        
+                        
+                        
+                        
+                        <a href="/documentation/bughunter.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-bughunter">
+                            
+                            Bughunter
+                            
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="/documentation/permission-structure.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-permission-structure">
+                            
+                            Permission structure
+                            
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="/documentation/sql-examples.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-sql-examples">
+                            
+                            SQL Examples
+                            
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="/documentation/redis.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-redis">
+                            
+                            Using Redis for caching
+                            
+                        </a>
+                        
+                        
+                    </div>
+                    
+                    <div class="list-group list-group-flush pb-3 mb-4 mx-n4">
+                
+                    <a href="/" class="list-group-item list-group-item-action border-0 py-1 fs-sm px-4">Kimai Home</a>
+                    <a href="/en/site-notice.html" class="list-group-item list-group-item-action border-0 py-1 fs-sm px-4">Site notice</a>
+                    <a href="/en/privacy-policy.html" class="list-group-item list-group-item-action border-0 py-1 fs-sm px-4">Privacy policy</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</aside>
+<script>
+    document.addEventListener("DOMContentLoaded", function(event) {
+        const dpm = document.getElementById('docnavi-rest-api');
+        if (dpm !== null) {
+            dpm.scrollIntoView({ behavior: "smooth", block: "end", inline: "nearest" });
+        }
+    });
+</script>
+<main class="docs-container pt-5">
+    <div class="container-fluid px-xxl-5 px-lg-4 pt-4 pt-lg-5 pb-2 pb-lg-4">
+
+        <div class="d-sm-flex align-items-end justify-content-between ps-lg-2 ps-xxl-0 mt-2 mt-lg-0 pt-4 mb-n3">
+            <div class="me-4">
+                <h1 class="pb-1">Quickstart for Kimai API (JSON / REST)</h1>
+                
+                <p class="text-muted fs-lg mb-2">Access your time-tracking data via the JSON API with Kimai</p>
+                
+            </div>
+            
+
+
+
+
+    <div class="dropdown">
+        <a class="btn btn-outline-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Older versions
+        </a>
+        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuLink">
+            
+            <a class="dropdown-item" href="/documentation/2.13.0/rest-api.html">Kimai 2.13.0</a>
+            
+            
+            <a class="dropdown-item" href="/documentation/rest-api.html">2.28.0 (latest version)</a>
+        </div>
+    </div>
+
+
+        </div>
+
+        <div class="markdown py-5 ps-lg-2 ps-xxl-0">
+            <div>
+                
+                <div id="documentation-content">
+                    <p>Read the Swagger documentation of the Kimai API in your Kimai installation at <code class="language-plaintext highlighter-rouge">/api/doc</code>.
+For example, you can have a look at the API docs for the demo installation at <a href="https://demo.kimai.org/api/doc">https://demo.kimai.org/api/doc</a>.
+You need to authenticate to see them, credentials can be <a href="/en/demo.html">found here</a>.</p>
+
+<p>Or you can export the JSON collection by visiting <code class="language-plaintext highlighter-rouge">/api/doc.json</code>. Save the result in a file, which can be imported with Postman.</p>
+
+<h2 id="authentication">Authentication</h2>
+
+<p>When calling the API you have to submit an additional <code class="language-plaintext highlighter-rouge">Authorization</code> header with every call:</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">Authorization: Bearer xyz</code> - here <code class="language-plaintext highlighter-rouge">xyz</code> is the unique API token for that account</li>
+</ul>
+
+<div class="alert alert-info d-flex" role="alert"><i class="bx bx-message-rounded-detail lead me-3"></i><p>The API token is NOT the normal user password. API tokens can be generated in the user profile.</p>
+</div>
+
+<div class="alert alert-warning d-flex" role="alert"><i class="bx bx-alarm-exclamation lead me-3"></i><p>You MUST use secure HTTPS calls to protect both credentials and data.</p>
+</div>
+
+<h3 id="api-tokens">API tokens</h3>
+
+<p>Each user can generate multiple API tokens.</p>
+
+<p>Each token has the following fields:</p>
+
+<ul>
+  <li><strong>name</strong>, which is only for yourself for simpler identification.</li>
+  <li><strong>expiration date</strong> which is optional - if set, this token won’t work from the configured date on</li>
+  <li><strong>last usage</strong> will be updated once a minute, when used - helps to identify obsolete tokens</li>
+</ul>
+
+<h2 id="swagger-file">Swagger file</h2>
+
+<p>The API calls can be exported in a Swagger file format, which can be imported into your tool of choice.
+You find the link in the API docs (the URL is <code class="language-plaintext highlighter-rouge">api/doc.json</code>).</p>
+
+<p>To use the API with Postman, the simplest approach is to export the swagger file and import it with Postman.</p>
+
+<h2 id="data-types">Data types</h2>
+
+<h3 id="default-values">Default values</h3>
+
+<p>The API does not promise any BC on any default value. This is especially true for optional booleans (see below).</p>
+
+<h3 id="datetime-formats-iso-8601-and-html5">DateTime formats (ISO 8601 and HTML5)</h3>
+
+<p>TL;DR</p>
+<ul>
+  <li>the API returns ISO 8601</li>
+  <li>the API expects HTML5 “local date and time” format</li>
+</ul>
+
+<p>The API returns ISO 8601 formatted datetime strings in the users local time, including the timezone offset.</p>
+
+<p>When <code class="language-plaintext highlighter-rouge">POST</code>ing or <code class="language-plaintext highlighter-rouge">PATCH</code>ing timesheet records, you MUST use the HTML5 format (see <a href="https://tools.ietf.org/html/rfc3339">RFC 3339</a> as well).
+Even if the API might allow different formats, only this one is guaranteed to work in the future.
+It is also the only format that works correct, adding a timezone might and will result in unexpected and wrong records.</p>
+
+<p>Please read <a href="http://w3c.github.io/html-reference/datatypes.html#form.data.datetime-local">this article</a> to find out more 
+about the “local date and time” pattern.</p>
+
+<ul>
+  <li>PHP pattern: <code class="language-plaintext highlighter-rouge">yyyy-MM-dd'T'HH:mm:ss</code> or <code class="language-plaintext highlighter-rouge">Y-m-d\TH:i:s</code> (for example <code class="language-plaintext highlighter-rouge">2019-04-20T14:00:00</code>).</li>
+  <li>moment.js pattern: <code class="language-plaintext highlighter-rouge">YYYY-MM-DDTHH:mm:ss</code> or <code class="language-plaintext highlighter-rouge">moment.HTML5_FMT.DATETIME_LOCAL_SECONDS</code>.</li>
+</ul>
+
+<p>Be aware: Kimai treats the given datetime as local time and adds the configured users timezone without changing the given time.</p>
+
+<p>Read <a href="https://github.com/kimai/kimai/issues/701#issuecomment-485564359">this comment</a> to understand the backgrounds about that decision.</p>
+
+<h3 id="boolean">Boolean</h3>
+
+<p>All boolean fields in <code class="language-plaintext highlighter-rouge">POST</code> and <code class="language-plaintext highlighter-rouge">PATCH</code> requests are optional, defaulting to <code class="language-plaintext highlighter-rouge">false</code> if unset.</p>
+
+<p>Therefor you should declare all booleans, no matter if you want them to be <code class="language-plaintext highlighter-rouge">true</code> or <code class="language-plaintext highlighter-rouge">false</code>.</p>
+
+<p>The field will be mapped to <code class="language-plaintext highlighter-rouge">false</code> if it is either <code class="language-plaintext highlighter-rouge">not provided</code> or <code class="language-plaintext highlighter-rouge">false</code>.
+Providing any other value, including <code class="language-plaintext highlighter-rouge">null</code>, will turn the value to <code class="language-plaintext highlighter-rouge">true</code>.</p>
+
+                </div>
+                
+
+                
+                <h2 id="related-articles" class="fs-4 mt-5">Related articles</h2>
+                <ul>
+                    
+                    
+                    <li>
+                        <a href="/documentation/rest-api-examples.html">API examples</a> &ndash; Some examples how to access the Kimai PAI with different languages
+                    </li>
+                    
+                </ul>
+                
+            </div>
+        </div>
+
+    </div>
+</main>
+
+
+    <aside class="side-nav side-nav-end d-none d-xxl-block position-fixed top-0 end-0 vh-100 py-5" style="width: 20rem;">
+        <h3 class="fs-lg mt-5 pt-5">Jump to</h3>
+        <ul class="nav" id="jumpToNav"><li class="nav-item"><a href="#authentication" class="nav-link">Authentication</a><ul><li class="nav-item"><a href="#api-tokens" class="nav-link">API tokens</a></li></ul></li><li class="nav-item"><a href="#swagger-file" class="nav-link">Swagger file</a></li><li class="nav-item"><a href="#data-types" class="nav-link">Data types</a><ul><li class="nav-item"><a href="#default-values" class="nav-link">Default values</a></li><li class="nav-item"><a href="#datetime-formats-iso-8601-and-html5" class="nav-link">DateTime formats (ISO 8601 and HTML5)</a></li><li class="nav-item"><a href="#boolean" class="nav-link">Boolean</a></li></ul></li></ul>
+        
+        <ul class="nav">
+            <li>
+                <a href="#related-articles" class="nav-link">Related articles</a>
+            </li>
+        </ul>
+        
+    </aside>
+
+
+
+<a href="#top" class="btn-scroll-top" data-scroll>
+    <span class="btn-scroll-top-tooltip text-muted fs-sm me-2">Top</span>
+    <i class="btn-scroll-top-icon bx bx-chevron-up"></i>
+</a>
+
+<script src="/assets/build/main.js?v1"></script>
+
+<script async defer src="https://sa.kimai.org/latest.js"></script>
+<noscript><img src="https://sa.kimai.org/noscript.gif" alt="" referrerpolicy="no-referrer-when-downgrade" /></noscript>
+
+</body>
+</html>

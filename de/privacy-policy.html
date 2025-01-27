@@ -1,0 +1,711 @@
+<!doctype html>
+<html lang="de" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="msapplication-TileColor" content="#2d89ef">
+    <meta name="theme-color" content="#4188c9">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="robots" content="index,follow">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://www.kimai.org/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://www.kimai.org/images/icon_32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://www.kimai.org/images/icon_16x16.png">
+    <title>Datenschutz – Kimai</title>
+    <link type="application/atom+xml" rel="alternate" href="https://www.kimai.org/feed.xml" title="Kimai Time-Tracking" />
+    <meta property="og:locale" content="de">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Kimai Time-Tracking">
+    <meta property="og:image" content="https://www.kimai.org/images/social-preview.webp">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Kimai Time-Tracking">
+    <meta name="twitter:site" content="@kimai_org">
+    <meta name="twitter:image" content="https://www.kimai.org/images/social-preview.webp">
+    <link rel="alternate" hreflang="cs" href="https://www.kimai.org/cs/privacy-policy.html">
+    <link rel="alternate" hreflang="de" href="https://www.kimai.org/de/privacy-policy.html">
+    <link rel="alternate" hreflang="es" href="https://www.kimai.org/es/privacy-policy.html">
+    <link rel="alternate" hreflang="fr" href="https://www.kimai.org/fr/privacy-policy.html">
+    <link rel="alternate" hreflang="he" href="https://www.kimai.co.il/privacy-policy.html">
+    <link rel="alternate" hreflang="hr" href="https://www.kimai.org/hr/privacy-policy.html">
+    <link rel="alternate" hreflang="it" href="https://www.kimai.org/it/privacy-policy.html">
+    <link rel="alternate" hreflang="nl" href="https://www.kimai.org/nl/privacy-policy.html">
+    <link rel="alternate" hreflang="pl" href="https://www.kimai.org/pl/privacy-policy.html">
+    <link rel="alternate" hreflang="en" href="https://www.kimai.org/en/privacy-policy.html">
+    <link rel="alternate" hreflang="pt" href="https://www.kimai.org/pt/privacy-policy.html">
+    <link rel="alternate" hreflang="pt-br" href="https://www.kimai.org/pt_BR/privacy-policy.html">
+    <link rel="alternate" hreflang="ru" href="https://www.kimai.org/ru/privacy-policy.html">
+    <link rel="alternate" hreflang="sk" href="https://www.kimai.org/sk/privacy-policy.html">
+    <link rel="alternate" hreflang="sv" href="https://www.kimai.org/sv/privacy-policy.html">
+    <link rel="alternate" hreflang="uk" href="https://www.kimai.org/uk/privacy-policy.html">
+    <link rel="alternate" hreflang="zh-hans" href="https://www.kimai.org/zh_Hans/privacy-policy.html">
+    <link rel="alternate" hreflang="zh-hant" href="https://www.kimai.tw/privacy-policy.html">
+    <link href="/assets/build/main.css?v6" rel="stylesheet" />
+</head>
+<body class="">
+
+
+
+
+
+
+
+<main class="page-wrapper">
+    
+
+
+
+
+
+
+
+
+
+
+
+<header class="header navbar navbar-expand-lg    bg-light navbar-sticky">
+    <div class="container px-3">
+        
+        <a href="/de/" class="navbar-brand pe-3">
+        <img src="/images/kimai_logo_48.webp" style="height:36px;width:36px;" alt="Kimai - Open Source Zeiterfassung"> Kimai
+        </a>
+        <div id="navbarNav" class="offcanvas offcanvas-end">
+            <div class="offcanvas-header border-bottom">
+                <h5 class="offcanvas-title">Menu</h5>
+                <button type="button" class="btn-close " data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    
+                    <li class="nav-item">
+                        <a href="/de/demo.html" class="nav-link">Demo</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a href="/de/pricing" class="nav-link">Preise</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-current="page">Community</a>
+                        <ul class="dropdown-menu">
+                            
+                            <li><a href="/de/store/" class="dropdown-item"><i class="bx bx-extension me-2"></i>Plugins</a></li>
+                            <li><a href="/de/download.html" class="dropdown-item"><i class="bx bxl-docker me-2"></i>Installation</a></li>
+                            <li><a href="/blog/" class="dropdown-item"><i class="bx bx-news me-2"></i>Blog</a></li>
+                            <li><a href="https://github.com/kimai/kimai/discussions" target="_blank" class="dropdown-item"><i class="bx bx-chat me-2"></i>Forum</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-current="page">Dokumentation</a>
+                        <ul class="dropdown-menu">
+                            
+                            
+                            
+                            <li><a href="https://www.kimai.org/documentation/chapter-manual.html" class="dropdown-item">
+                                <i class="bx bx-book me-2"></i>
+                                
+                                Benutzerhandbuch
+                            </a></li>
+                            
+                            
+                            
+                            <li><a href="https://www.kimai.org/documentation/cloud.html" class="dropdown-item">
+                                <i class="bx bx-cloud me-2"></i>
+                                
+                                Cloud
+                            </a></li>
+                            
+                            
+                            
+                            <li><a href="https://www.kimai.org/documentation/chapter-on-premise.html" class="dropdown-item">
+                                <i class="bx bx-server me-2"></i>
+                                
+                                Selbst gehostet
+                            </a></li>
+                            
+                            
+                            
+                            <li><a href="https://www.kimai.org/documentation/chapter-developer.html" class="dropdown-item">
+                                <i class="bx bx-code-alt me-2"></i>
+                                
+                                Entwickler
+                            </a></li>
+                            
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="pe-lg-1 ms-auto me-2">
+            
+
+
+
+<a href="https://www.kimai.cloud/de/auth/" class="btn btn-sm fs-sm d-none d-md-inline-flex me-2 btn-outline-secondary">Anmelden</a>
+
+            
+
+
+
+<a href="https://www.kimai.cloud/de/auth/registrierung" class="btn btn-success btn-sm fs-sm d-inline-flex">Kostenlos starten</a>
+
+        </div>
+        <button type="button" class="navbar-toggler" data-bs-toggle="offcanvas" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </div>
+</header>
+
+
+    <section class="container py-5 my-1 my-md-4 my-lg-5">
+        <div class="row">
+            <div class="col-lg-12 mb-4 mb-lg-0">
+                <div class="pe-lg-4 me-lg-3 pe-xl-0 me-xl-0">
+                    
+                    <h2 class="h1 mb-4 text-center">Datenschutz</h2>
+                    
+                    <div class="mb-0">
+                        
+
+
+
+
+
+
+
+<ul class="nav nav-tabs justify-content-center my-5" id="nav-tab" role="tablist">
+    
+        
+    
+        
+        
+        <li class="nav-item" role="presentation">
+            <a href="/de/site-notice.html" class="nav-link">Impressum</a>
+        </li>
+    
+    
+        
+        
+        <li class="nav-item" role="presentation">
+            <a href="/de/privacy-policy.html" class="nav-link active">Datenschutz</a>
+        </li>
+    
+    
+        
+        
+        <li class="nav-item" role="presentation">
+            <a href="/de/terms-cloud.html" class="nav-link">AGB</a>
+        </li>
+    
+    
+        
+        
+        <li class="nav-item" role="presentation">
+            <a href="/de/terms-plugins.html" class="nav-link">Plugin Lizenz</a>
+        </li>
+    
+    
+        
+        
+        <li class="nav-item" role="presentation">
+            <a href="/de/terms-gdpr.html" class="nav-link">Auftragsverarbeitung</a>
+        </li>
+    
+    
+        
+        
+        <li class="nav-item" role="presentation">
+            <a href="/de/trademark-policy.html" class="nav-link">Marke</a>
+        </li>
+    
+    
+</ul>
+<div class="tab-content" id="nav-tabContent">
+    <div class="tab-pane fade show active" role="tabpanel">
+
+        
+<h2 id="einführung">Einführung</h2>
+
+<p>Die folgenden Hinweise geben einen einfachen Überblick darüber, was mit Ihren personenbezogenen Daten passiert, wenn Sie unsere Website besuchen.
+Personenbezogene Daten sind alle Daten, mit denen Sie persönlich identifiziert werden können.
+Ausführliche Informationen zum Thema Datenschutz entnehmen Sie unserer unter diesem Text aufgeführten Datenschutzerklärung.</p>
+
+<p><strong>Wer ist verantwortlich für die Datenerfassung auf dieser Website?</strong></p>
+
+<p>Die Datenverarbeitung auf dieser Website erfolgt durch den Websitebetreiber.
+Dessen Kontaktdaten können Sie dem Impressum dieser Website entnehmen.</p>
+
+<p><strong>Wie werden Ihre Daten erfasst?</strong></p>
+
+<p>Ihre Daten werden zum einen dadurch erhoben, dass Sie uns diese mitteilen.
+Hierbei kann es sich z.B. um Daten handeln, die Sie uns als Email zusenden oder auf der Webseite, im Rahmen einer Registrierung oder eines Bestellvorgangs, eingeben.
+Andere Daten werden automatisch beim Besuch der Website durch unsere IT-Systeme erfasst.
+Das sind vor allem technische Daten (z.B. angefragte URL oder Uhrzeit des Seitenaufrufs).
+Die Erfassung dieser Daten erfolgt automatisch, sobald Sie unsere Website betreten.</p>
+
+<p><strong>Wofür werden Ihre Daten genutzt?</strong></p>
+
+<p>Ein Teil der Daten wird erhoben, um eine fehlerfreie Bereitstellung der Website zu gewährleisten.
+Andere Daten können zur Analyse Ihres Nutzerverhaltens verwendet werden.</p>
+
+<p><strong>Welche Rechte haben Sie bezüglich Ihrer Daten?</strong></p>
+
+<p>Sie haben jederzeit das Recht unentgeltlich Auskunft über Herkunft, Empfänger und Zweck Ihrer gespeicherten personenbezogenen Daten zu erhalten.
+Sie haben außerdem ein Recht, die Berichtigung, Sperrung oder Löschung dieser Daten zu verlangen.
+Hierzu sowie zu weiteren Fragen zum Thema Datenschutz können Sie sich jederzeit unter der im Impressum angegebenen Adresse an uns wenden.
+Des Weiteren steht Ihnen ein Beschwerderecht bei der zuständigen Aufsichtsbehörde zu.</p>
+
+<h2 id="datenschutz">Datenschutz</h2>
+
+<p>Ihre personenbezogenen Daten werden vertraulich und entsprechend der gesetzlichen Datenschutzvorschriften sowie dieser Datenschutzerklärung behandelt.</p>
+
+<p>Wenn Sie diese Website benutzen, werden verschiedene personenbezogene Daten erhoben.
+Personenbezogene Daten sind Daten, mit denen Sie persönlich identifiziert werden können.
+Die vorliegende Datenschutzerklärung erläutert, welche Daten erhoben und wofür diese genutzt werden.
+Sie erläutert auch, wie und zu welchem Zweck das geschieht.</p>
+
+<p>Die Datenübertragung im Internet (z.B. bei der Kommunikation per E-Mail) kann Sicherheitslücken aufweisen.
+Ein lückenloser Schutz der Daten vor dem Zugriff durch Dritte ist nicht möglich.</p>
+
+<h2 id="verantwortliche-stelle">Verantwortliche Stelle</h2>
+
+<p>Die verantwortliche Stelle für die Datenverarbeitung auf dieser Website ist:</p>
+
+<p>Kevin Papst, Schweidlgasse 46/1/13, 1020 Wien (Österreich)<br>
+Telephone: +49 (0)30 12087229<br>
+Email: <a href="mailto:support@kimai.org">support@kimai.org</a><br>
+EU-VAT Id: ATU75657727</p>
+
+<p>Verantwortliche Stelle ist die natürliche oder juristische Person, die allein oder gemeinsam mit anderen über die Zwecke und Mittel der Verarbeitung von personenbezogenen Daten (z.B. Namen, E-Mail-Adressen o. Ä.) entscheidet.</p>
+
+<h2 id="widerruf-ihrer-einwilligung-zur-datenverarbeitung">Widerruf Ihrer Einwilligung zur Datenverarbeitung</h2>
+
+<p>Viele Datenverarbeitungsvorgänge sind nur mit Ihrer ausdrücklichen Einwilligung möglich.
+Sie können eine bereits erteilte Einwilligung jederzeit widerrufen.
+Dazu reicht eine formlose Mitteilung per E-Mail an uns.
+Die Rechtmäßigkeit der bis zum Widerruf erfolgten Datenverarbeitung bleibt vom Widerruf unberührt.</p>
+
+<h2 id="beschwerderecht-bei-der-zuständigen-aufsichtsbehörde">Beschwerderecht bei der zuständigen Aufsichtsbehörde</h2>
+
+<p>Im Falle datenschutzrechtlicher Verstöße steht dem Betroffenen ein Beschwerderecht bei der zuständigen Aufsichtsbehörde zu.
+Zuständige Aufsichtsbehörde in datenschutzrechtlichen Fragen ist der Landesdatenschutzbeauftragte des Bundeslandes, in dem unser Unternehmen seinen Sitz hat.
+Eine Liste der Datenschutzbeauftragten sowie deren Kontaktdaten können folgendem Link entnommen werden: <a href="https://www.bfdi.bund.de/DE/Infothek/Anschriften_Links/anschriften_links-node.html">https://www.bfdi.bund.de/DE/Infothek/Anschriften_Links/anschriften_links-node.html</a></p>
+
+<h2 id="recht-auf-datenübertragbarkeit">Recht auf Datenübertragbarkeit</h2>
+
+<p>Sie haben das Recht, Daten, die auf Grundlage Ihrer Einwilligung oder in Erfüllung eines Vertrags automatisiert verarbeitet werden, an sich oder an einen Dritten in einem gängigen, maschinenlesbaren Format aushändigen zu lassen.
+Sofern Sie die direkte Übertragung der Daten an einen anderen Verantwortlichen verlangen, erfolgt dies nur, soweit es technisch machbar ist.</p>
+
+<h2 id="ssl--bzw-tls-verschlüsselung">SSL- bzw. TLS-Verschlüsselung</h2>
+
+<p>Diese Seite nutzt aus Sicherheitsgründen und zum Schutz der Übertragung vertraulicher Inhalte, wie zum Beispiel Bestellungen oder Anfragen, die Sie an uns als Seitenbetreiber senden, eine SSL-bzw. TLS-Verschlüsselung.</p>
+
+<p>Wenn die SSL- bzw. TLS-Verschlüsselung aktiviert ist, können die Daten, die Sie an uns übermitteln, nicht von Dritten mitgelesen werden.</p>
+
+<h3 id="auskunft-sperrung-löschung">Auskunft, Sperrung, Löschung</h3>
+
+<p>Sie haben im Rahmen der geltenden gesetzlichen Bestimmungen jederzeit das Recht auf unentgeltliche Auskunft über Ihre gespeicherten personenbezogenen Daten, deren Herkunft und Empfänger und den Zweck der Datenverarbeitung und ggf. ein Recht auf Berichtigung, Sperrung oder Löschung dieser Daten.
+Hierzu sowie zu weiteren Fragen zum Thema personenbezogene Daten können Sie sich jederzeit unter der im Impressum angegebenen Adresse an uns wenden.</p>
+
+<h2 id="datenerfassung-auf-unserer-website">Datenerfassung auf unserer Website</h2>
+
+<p><strong>Cookies</strong></p>
+
+<p>Die Internetseiten verwenden teilweise so genannte Cookies.
+Cookies dienen dazu, unser Angebot nutzerfreundlicher, effektiver und sicherer zu machen.
+Cookies sind kleine Textdateien, die auf Ihrem Rechner abgelegt werden und die Ihr Browser speichert.
+Die meisten der von uns verwendeten Cookies sind so genannte “Session-Cookies”. Sie werden nach Ende Ihres Besuchs automatisch gelöscht.
+Andere Cookies bleiben auf Ihrem Endgerät gespeichert bis Sie diese löschen.
+Diese Cookies ermöglichen es uns, Ihren Browser beim nächsten Besuch wiederzuerkennen.
+Sie können Ihren Browser so einstellen, dass Sie über das Setzen von Cookies informiert werden und Cookies nur im Einzelfall erlauben, die Annahme von Cookies für bestimmte Fälle oder generell ausschließen sowie das automatische Löschen der Cookies beim Schließen des Browser aktivieren.
+Bei der Deaktivierung von Cookies kann die Funktionalität dieser Website eingeschränkt sein.
+Cookies, die zur Durchführung des elektronischen Kommunikationsvorgangs oder zur Bereitstellung bestimmter, von Ihnen erwünschter Funktionen (z.B. Warenkorbfunktion) erforderlich sind, werden auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO gespeichert.
+Soweit andere Cookies (z.B. Cookies zur Analyse Ihres Surfverhaltens) gespeichert werden, werden diese in dieser Datenschutzerklärung gesondert behandelt.
+Der Websitebetreiber hat ein berechtigtes Interesse an der Speicherung von Cookies zur technisch fehlerfreien und optimierten Bereitstellung seiner Dienste.</p>
+
+<p><strong>Server Hosting und Standort</strong></p>
+
+<p>Unsere Dienste laufen auf der Cloud der Hetzner Online GmbH (Deutschland).
+Serverstandort ist Falkenstein, Deutschland.</p>
+
+<p><strong>Server-Log-Dateien</strong></p>
+
+<p>Der Provider der Seiten erhebt und speichert keine personenbezogenen Informationen in so genannten Server-Log-Dateien.
+Lediglich in Fehlerfällen wird die Uhrzeit der Anfrage und der Fehlergrund aufgezeichnet.
+Diese Daten werden spätestens nach 7 Tagen automatisch gelöscht.
+Eine Zusammenführung dieser Daten mit anderen Datenquellen wird nicht vorgenommen.
+Grundlage für die Datenverarbeitung ist Art. 6 Abs. 1 lit. b DSGVO, der die Verarbeitung von Daten zur Erfüllung eines Vertrags oder vorvertraglicher Maßnahmen gestattet.</p>
+
+<p><strong>Registrierung</strong></p>
+
+<p>Zur Nutzung unserer Zeiterfassung-Software Kimai ist eine Registrierung über die Website erforderlich.
+Die erforderlichen Angaben für eine Registrierung sind aus der Eingabemaske zur Registrierung ersichtlich.
+Die Bereitstellung der Daten, welche als Pflichtangaben gekennzeichnet sind, ist zwingend erforderlich, damit die Registrierung abgeschlossen werden kann.
+Sollten Sie eine Registrierung über einen Authentifizierungsanbieter (wie Google oder GitHub) durchführen, so werden die Daten durch diesen Anbieter automatisch an uns, mittels eine Prozesses der OAuth gennant wird, übertragen.
+Sollten Sie eine manuelle Registrierung via Email durchführen, muss eine Recaptcha Bestätigung gelöst werden, welche von Google ausgeliefert wird.
+Der genutzte Authentifizierungsanbieter erfährt von jedem Anmeldevorgang auf unserer Webseite, welchen sie mit dessen Hilfe durchführen.
+Die bereitgestellten Daten werden zum Zweck der Leistungserbringung verarbeitet.
+Die Verarbeitung beruht auf der Rechtsgrundlage des Art. 6 Abs. 1 Satz. 1 b DSGVO.</p>
+
+<p><strong>Bestellung eines Kimai-Cloud Tarifs</strong></p>
+
+<p>Sollten Sie sich für einen kostenpflichtigen Tarif entscheiden, werden Ihre angegebenen Rechnungs- und Zahlungsdaten zum Zweck der Vertragserfüllung verarbeitet.
+Die Bereitstellung der Rechnungs- und Zahlungsdaten ist für den Vertragsabschluss zwingend erforderlich.
+Soweit es für die Vertragserfüllung erforderlich ist, werden Daten auch an Dritte übermittelt (z.B. an unseren Zahlungsdienstleister oder das beauftragte Kreditinstitut).
+Rechtgrundlage für die Datenverarbeitung ist Art. 6 Abs. 1 S. 1 b DSGVO.</p>
+
+<p><strong>Emails und Newsletter</strong></p>
+
+<p>Wir verwenden Brevo für den Versand von Newslettern und E-Mails zu unseren Diensten (sowohl für Plugins als auch für Cloud).</p>
+
+<p>Durch Anmeldung an unserem System und der Erstellung einer Kimai Cloud, werden Ihre E-Mail-Adresse und Name zum Zweck der Vertragserfüllung verarbeitet.
+Soweit es für die Vertragserfüllung erforderlich ist, werden Daten auch an Dritte übermittelt (z.B. an unseren Email-Provider).</p>
+
+<p>Wenn Sie sich für den Erhalt unseres Newsletters anmelden, werden die bei der Anmeldung abgefragten Daten (Ihre E-Mail-Adresse) von Brevo verarbeitet.
+Dazu werden Ihre IP-Adresse und das Datum Ihrer Anmeldung sowie die Uhrzeit gespeichert.
+Als weiterer Bestandteil des Anmeldevorgangs wird Ihre Einwilligung zum Versand des Newsletters eingeholt, der Inhalt konkret beschrieben und auf diese Datenschutzerklärung verwiesen.</p>
+
+<p>Die von Brevo versandten Newsletter enthalten Technologien, mit denen wir analysieren können, ob und wann eine E-Mail geöffnet wurde und ob und welche im Newsletter enthaltenen Links verfolgt wurden.
+Diese Daten speichern wir zusätzlich zu den technischen Daten (Systemdaten und IP-Adresse), damit der jeweilige Newsletter optimal auf Ihre Wünsche und Interessen zugeschnitten werden kann.
+Die so erhobenen Daten werden verwendet, um die Qualität unserer Newsletter kontinuierlich zu verbessern.</p>
+
+<p>Rechtsgrundlage für die Datenverarbeitung ist Art. 6 Abs. 1 S. 1 b DSGVO.</p>
+
+<p>Die Einwilligung in die Zusendung des Newsletters kann jederzeit mit Wirkung für die Zukunft gemäß Art. 7 Abs. 3 GDPR.
+Dazu müssen Sie uns lediglich über Ihren Widerruf informieren oder den in jedem Newsletter enthaltenen Abmeldelink anklicken.</p>
+
+<p><strong>YouTube</strong></p>
+
+<p>Unsere Website nutzt Plugins der von Google betriebenen Seite YouTube.
+Betreiber der Seiten ist die YouTube, LLC, 901 Cherry Ave., San Bruno, CA 94066, USA.
+Wenn Sie eine unserer mit einem YouTube-Plugin ausgestatteten Seiten besuchen, wird eine Verbindung zu den Servern von YouTube hergestellt.
+Dabei wird dem YouTube-Server mitgeteilt, welche unserer Seiten Sie besucht haben.
+Wenn Sie in Ihrem YouTube-Account eingeloggt sind, ermöglichen Sie YouTube, Ihr Surfverhalten direkt Ihrem persönlichen Profil zuzuordnen.
+Dies können Sie verhindern, indem Sie sich aus Ihrem YouTube-Account ausloggen.
+Die Nutzung von YouTube erfolgt im Interesse einer ansprechenden Darstellung unserer Online-Angebote.
+Weitere Informationen zum Umgang mit Nutzerdaten finden Sie in der <a href="https://www.google.de/intl/de/policies/privacy">Datenschutzerklärung von YouTube</a>.
+Dies stellt ein berechtigtes Interesse im Sinne von Art. 6 Abs. 1 lit. f DSGVO dar.</p>
+
+<p><strong>Simple Analytics</strong></p>
+
+<p>Um wichtige Informationen über das Verhalten unserer Besucher zu erhalten, verwenden wir Simple Analytics.
+Diese Analysesoftware gibt uns nur einen Einblick in unsere Besucher im Allgemeinen, aber nicht in einzelne Personen, da sie keine Besucher verfolgt und keine personenbezogenen Daten speichert.
+In der <a href="https://docs.simpleanalytics.com/what-we-collect">Dokumentation</a> erfahren Sie, was Simple Analytics sammelt (und vor allem, was nicht).</p>
+
+<p><strong>Google Fonts</strong></p>
+
+<p>Für die einheitliche Darstellung von Schriftarten verwendet diese Seite die von Google bereitgestellten Webfonts.
+Wenn Sie eine Seite öffnen, lädt Ihr Browser die benötigten Webfonts in Ihren Browser-Cache, um Texte und Schriften korrekt darzustellen.
+Die Verwendung von Google Webfonts erfolgt im Interesse einer einheitlichen und ansprechenden Darstellung unserer Website.
+Dies stellt ein berechtigtes Interesse im Sinne von Art. 6 Abs. 1 lit. f) DSGVO dar.</p>
+
+<p><strong>Gumroad</strong></p>
+
+<p>Wenn Sie ein Plugin kaufen möchten und im Shop auf die Schaltfläche „Kaufen“ klicken, werden Sie zur Software-Verkaufsplattform Gumroad weitergeleitet.</p>
+
+<p>Im Sinne der europäischen Datenschutzgesetzgebung ist Gumroad der Verantwortliche für die personenbezogenen Daten, die während des Kauf- und Bezahlvorgangs für eigene Geschäftszwecke erhoben werden.</p>
+
+<p><strong>LemonSqueezy</strong></p>
+
+<p>Wenn Sie ein Plugin kaufen möchten und auf die „Kaufen“-Buttons im Shop klicken, werden Sie auf die Software-Verkaufsplattform Lemon Squeezy weitergeleitet.</p>
+
+<p>Lemon Squeezy ist im Sinne des europäischen Datenschutzrechts die verantwortliche Stelle für die personenbezogenen Daten, die im Rahmen des Kauf- und Bezahlvorgangs für eigene Geschäftszwecke erhoben werden.</p>
+
+<p><strong>Hetzner Cloud</strong></p>
+
+<p>Der Dienst läuft auf der Cloud der Hetzner Online GmbH (Deutschland). Serverstandort ist Falkenstein, Deutschland.</p>
+
+<h2 id="dauer-der-speicherung">Dauer der Speicherung</h2>
+
+<p>Sofern sich aus vorherigen Hinweisen nichts anderes ergibt, werden ihre Daten nur solange gespeichert, wie es zur Erreichung des Verarbeitungszwecks oder für die Erfüllung unserer vertraglichen oder gesetzlichen Pflichten erforderlich ist.
+Solche gesetzlichen Aufbewahrungspflichten können sich aus handels- oder steuerrechtlichen Vorschriften ergeben.</p>
+
+<h2 id="subprozessor">Subprozessor</h2>
+
+<p>Um die Bereitstellung der Dienste zu ermöglichen, werden Drittanbieter beauftragt, um bei der Datenverarbeitung zu unterstützen.
+Bei den eingesetzten Dienstleistern, welche Subprozessor bzw. Unterauftragsverarbeiter genannt werden, handelt es sich um:</p>
+
+<p><strong>Brevo</strong>: Emails, Newsletter, <a href="https://www.brevo.com/">Link</a>, <a href="https://www.brevo.com/legal/privacypolicy/">Privacy policy</a>, <a href="https://www.brevo.com/information-for-email-recipients/">Info</a><br>
+Sendinblue GmbH, Köpenicker Straße 126, 10179 Berlin, Germany</p>
+
+<p><strong>GitHub</strong>: OAuth login, <a href="https://github.com">Link</a>, <a href="https://github.com/site/privacy">Privacy policy</a><br>
+GitHub, Inc., 88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, USA</p>
+
+<p><strong>Google</strong>: OAuth login, YouTube Videos, Re-captcha verification, <a href="https://www.google.com">Link</a>, <a href="https://policies.google.com/privacy">Privacy policy</a><br>
+Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Ireland</p>
+
+<p><strong>Gumroad</strong>: Plugin Marketplace <a href="https://gumroad.com/">Link</a>, <a href="https://gumroad.com/privacy">Privacy policy</a><br>
+Gumroad, Inc., 548 Market St, San Francisco, CA 94104-5401, USA</p>
+
+<p><strong>Hetzner</strong>: Server Hosting, <a href="https://www.hetzner.com/">Link</a>, <a href="https://www.hetzner.com/rechtliches/datenschutz">Privacy policy</a><br>
+Hetzner Online GmbH, Industriestr. 25, 91710 Gunzenhausen, Germany</p>
+
+<p><strong>Lemon Squeezy</strong>: Plugin Marketplace <a href="https://www.lemonsqueezy.com">Link</a>, <a href="https://www.lemonsqueezy.com/privacy">Privacy policy</a><br>
+Lemon Squeezy, 222 Main Street Suite 500 , Salt Lake City, UT 84101, USA</p>
+
+<p><strong>Simple Analytics</strong>: Anonymous statistics, <a href="https://simpleanalytics.com">Link</a>, <a href="https://dashboard.simpleanalytics.com/privacy-policy">Privacy policy</a><br>
+Simple Analytics B.V., Jacob van Lennepstraat 78 H, 1053 HM Amsterdam, Netherlands</p>
+
+<p><strong>Stripe</strong>: Payment and contract management, <a href="https://stripe.com">Link</a>, <a href="https://stripe.com/privacy">Privacy policy</a><br>
+Stripe, Inc., 510 Townsend Street, San Francisco, CA 94103, USA</p>
+
+<h3 id="änderungsverlauf">Änderungsverlauf</h3>
+
+<ul>
+  <li>
+<strong>18.03.2024</strong>: Änderung “Sendinblue Frankreich” zu “Brevo Deutschland”, Simple Analytics aus Transparenzgründen aufgenommen</li>
+  <li>
+<strong>14.11.2023</strong>: Recaptcha Verifizierung via Subprozessor “Google” wieder hinzugefügt</li>
+  <li>
+<strong>25.04.2021</strong>: Recaptcha Verifizierung via Subprozessor “Google” entfernt</li>
+  <li>
+<strong>01.01.2021</strong>: Änderung der Kontaktdaten nach Umzug von Deutschland nach Österreich</li>
+  <li>
+<strong>18.12.2020</strong>: “SendInBlue” (Email) hinzugefügt, “Google” (Email) und “Gumroad” entfernt, Details unter “Subprozessor” hinzugefügt</li>
+  <li>
+<strong>14.10.2020</strong>: Recaptcha Verifizierung via Subprozessor “Google” hinzugefügt</li>
+  <li>
+<strong>04.12.2019</strong>: “Hetzner” (Hosting) hinzugefügt, Abschnitte “Emails” und “Subprozessor” hinzugefügt</li>
+</ul>
+
+
+
+    </div>
+</div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+
+
+
+
+
+
+
+
+<footer class="footer bg-dark pt-5 pb-4">
+    <div class="container pt-1 pt-md-3 pt-lg-4 pt-xl-5">
+        <div class="row">
+            <div class="col-md-5 col-xl-4 mb-4 mb-md-5 mb-lg-0">
+                <div class="d-flex align-items-center pb-3 mb-1">
+                    <div class="navbar-brand text-white p-0 pe-1 me-0">
+                        Kimai
+                    </div>
+                    <hr class="vr mt-2 mx-3" style="height: 26px;">
+                    <div class="text-white fw-semibold ps-1">#1 Open-Source Zeiterfassung</div>
+                </div>
+                <p class="text-body fs-sm pb-1 pb-md-2 pb-lg-2 mb-2">
+                    Zeiterfassung leicht gemacht. Eine Open-Source-Lösung für Teams jeder Größe - selbst gehostet oder als SaaS.
+                </p>
+                <div class="d-flex flex-column flex-sm-row flex-lg-column align-items-sm-center align-items-lg-start justify-content-between pb-1 pb-md-2 pb-lg-3 mb-3">
+                    <div class="position-relative">
+                        <div class="dropdown">
+                            <button type="button" class="form-select" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="bx bx-globe top-50 start-0 text-body me-2"></i>
+                                Deutsch
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-end">
+                                
+                                    <a dir="ltr" href="https://www.kimai.org/cs/" class="dropdown-item" title="Kimai - Open Source sledování času">Čeština</a>
+                                
+                                    <a dir="ltr" href="https://www.kimai.org/de/" class="dropdown-item active" title="Kimai - Open Source Zeiterfassung">Deutsch</a>
+                                
+                                    <a dir="ltr" href="https://www.kimai.org" class="dropdown-item" title="Kimai - Open Source time-tracker">English</a>
+                                
+                                    <a dir="ltr" href="https://www.kimai.org/es/" class="dropdown-item" title="Página de inicio de Kimai">Español</a>
+                                
+                                    <a dir="ltr" href="https://www.kimai.org/fr/" class="dropdown-item" title="Kimai - Suivi du temps à code ouvert">Français</a>
+                                
+                                    <a dir="rtl" href="https://www.kimai.co.il" class="dropdown-item" title="Kimai - מעקב שעות בקוד פתוח">עברית</a>
+                                
+                                    <a dir="ltr" href="https://www.kimai.org/hr/" class="dropdown-item" title="Kimai – Program otvorenog koda za evidentiranje vremena">Hrvatski</a>
+                                
+                                    <a dir="ltr" href="https://www.kimai.org/it/" class="dropdown-item" title="Kimai: time-tracker open source">Italiano</a>
+                                
+                                    <a dir="ltr" href="https://www.kimai.org/nl/" class="dropdown-item" title="Kimai - Open Source tijdregistratie">Nederlands</a>
+                                
+                                    <a dir="ltr" href="https://www.kimai.org/pl/" class="dropdown-item" title="Kimai - Otwarte oprogramowanie do śledzenia czasu">Polski</a>
+                                
+                                    <a dir="ltr" href="https://www.kimai.org/pt/" class="dropdown-item" title="Kimai - Rastreador de tempo de código aberto">Português</a>
+                                
+                                    <a dir="ltr" href="https://www.kimai.org/pt_BR/" class="dropdown-item" title="Kimai - Rastreador de tempo de código aberto">Português (Brasil)</a>
+                                
+                                    <a dir="ltr" href="https://www.kimai.org/ru/" class="dropdown-item" title="Kimai - регистратор времени с открытым исходным кодом">Русский</a>
+                                
+                                    <a dir="ltr" href="https://www.kimai.org/sk/" class="dropdown-item" title="Kimai - Open Source sledovanie času">Slovenčina</a>
+                                
+                                    <a dir="ltr" href="https://www.kimai.org/sv/" class="dropdown-item" title="Kimai - öppen källkod tidsspårare">Svenska</a>
+                                
+                                    <a dir="ltr" href="https://www.kimai.org/uk/" class="dropdown-item" title="Kimai — реєстратор часу з відкритим сирцевим кодом">Українська</a>
+                                
+                                    <a dir="ltr" href="https://www.kimai.org/zh_Hans/" class="dropdown-item" title="Kimai - 开源时间跟踪器">中文（中国）</a>
+                                
+                                    <a dir="ltr" href="https://www.kimai.tw" class="dropdown-item" title="Kimai —— 開放源始碼的工時追蹤工具">中文（繁體）</a>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="col-md-7 offset-xl-1">
+                <div id="footer-links" class="row">
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <h6 class="fs-lg mb-1 mb-md-2">
+                            <span class="d-none d-md-block">Company</span>
+                            <a href="#tools" class="d-block text-white dropdown-toggle d-md-none py-2" data-bs-toggle="collapse">Company</a>
+                        </h6>
+                        <div id="tools" class="collapse d-md-block" data-bs-parent="#footer-links">
+                            <ul class="nav flex-column">
+                                <li class="nav-item">
+                                    <a href="/de/about.html" class="nav-link fs-sm fw-medium px-0 py-1">Über Kimai</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="/de/features.html" class="nav-link fs-sm fw-medium px-0 py-1">Funktionen</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="/de/support.html" class="nav-link fs-sm fw-medium px-0 py-1">Support</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="/de/reviews" class="nav-link fs-sm fw-medium px-0 py-1">Bewertungen</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="/de/kimai-rabatt-codes" class="nav-link fs-sm fw-medium px-0 py-1">Rabatt Codes</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <h6 class="fs-lg mb-1 mb-md-2">
+                            <span class="d-none d-md-block">Kimai für</span>
+                            <a href="#landing-kimai-for" class="d-block text-white dropdown-toggle d-md-none py-2" data-bs-toggle="collapse">Kimai</a>
+                        </h6>
+                        <div id="landing-kimai-for" class="collapse d-md-block" data-bs-parent="#footer-links">
+                            <ul class="nav flex-column">
+                                <li class="nav-item">
+                                    <a href="/de/zeiterfassung-non-profit.html" class="nav-link fs-sm fw-medium px-0 py-1">Gemeinnützige Organisationen</a>
+                                </li>
+                                
+                                
+                                <li class="nav-item">
+                                    <a href="/en/agency-time-tracking" class="nav-link fs-sm fw-medium px-0 py-1" title="Time-tracking for Time Tracking For Agencies">Agencies</a>
+                                </li>
+                                
+                                <li class="nav-item">
+                                    <a href="/en/consultants-time-tracking" class="nav-link fs-sm fw-medium px-0 py-1" title="Time-tracking for Time Tracking For Consultants">Consultants</a>
+                                </li>
+                                
+                                <li class="nav-item">
+                                    <a href="/en/software-developers-time-tracking" class="nav-link fs-sm fw-medium px-0 py-1" title="Time-tracking for Time Tracking For Software Developers">Software Developers</a>
+                                </li>
+                                
+                                <li class="nav-item">
+                                    
+                                    <a href="/en/industry" class="nav-link fs-sm fw-medium px-0 py-1">Weitere Branchen</a>
+                                </li>                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <h6 class="fs-lg mb-1 mb-md-2">
+                            <span class="d-none d-md-block">Vergleichen</span>
+                            <a href="#footer-cmp" class="d-block text-white dropdown-toggle d-md-none py-2" data-bs-toggle="collapse">Vergleichen</a>
+                        </h6>
+                        <div id="footer-cmp" class="collapse d-md-block" data-bs-parent="#footer-links">
+                            <ul class="nav flex-column">
+                                <li class="nav-item">
+                                    <a href="/de/compare/" class="nav-link fs-sm fw-medium px-0 py-1">Zeiterfassungen im Vergleich</a>
+                                </li>
+                                
+                                
+                                    <li class="nav-item">
+                                        <a href="https://www.kimai.org/en/clockify-alternative" class="nav-link fs-sm fw-medium px-0 py-1" title="Compare Kimai to Clockify">Clockify</a>
+                                    </li>
+                                
+                                    <li class="nav-item">
+                                        <a href="https://www.kimai.org/en/openproject-alternative" class="nav-link fs-sm fw-medium px-0 py-1" title="Compare Kimai to OpenProject">OpenProject</a>
+                                    </li>
+                                
+                                    <li class="nav-item">
+                                        <a href="https://www.kimai.org/en/toggl-alternative" class="nav-link fs-sm fw-medium px-0 py-1" title="Compare Kimai to toggl track">toggl track</a>
+                                    </li>
+                                
+                                
+                                <li class="nav-item">
+                                    <a href="/de/time-tracking-terms" class="nav-link fs-sm fw-medium px-0 py-1">Zeiterfassungsbegriffe</a>
+                                </li>
+                                
+                            </ul>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="d-md-flex align-items-center justify-content-between pt-sm-2 pt-md-4 pt-lg-5 pb-2 mt-4 ">
+    <ul class="nav order-md-1 ms-md-0 mb-3 mb-md-0">
+        <li class="nav-item">
+            <a href="/de/site-notice.html" class="nav-link fs-sm fw-medium">Impressum</a>
+        </li>
+        <li class="nav-item">
+            <a href="/de/privacy-policy.html" class="nav-link fs-sm fw-medium">Datenschutz</a>
+        </li>
+        <li class="nav-item">
+            <a href="/de/terms-cloud.html" class="nav-link fs-sm fw-medium">AGB</a>
+        </li>
+    </ul>
+    <div class="nav order-md-2 mb-3 mb-md-0">
+        <a target="_blank" href="https://github.com/kimai/kimai" class="btn btn-icon btn-secondary btn-github rounded-circle me-3" aria-label="GitHub">
+    <i class="bx bxl-github"></i>
+</a>
+<a target="_blank" href="https://www.youtube.com/@kimai_org" class="btn btn-icon btn-secondary btn-youtube rounded-circle me-3" aria-label="YouTube">
+    <i class="bx bxl-youtube"></i>
+</a>
+<a target="_blank" href="https://www.linkedin.com/company/kimai-timetracker/" class="btn btn-icon btn-secondary btn-linkedin rounded-circle me-3" aria-label="LinkedIn">
+    <i class="bx bxl-linkedin"></i>
+</a>
+<a target="_blank" href="https://www.instagram.com/kimai_org" class="btn btn-icon btn-secondary btn-instagram rounded-circle me-3" aria-label="Instagram">
+    <i class="bx bxl-instagram"></i>
+</a>
+<a target="_blank" href="https://twitter.com/kimai_org" class="btn btn-icon btn-secondary btn-twitter rounded-circle me-3" aria-label="Twitter / X">
+    <i class="bx bxl-twitter"></i>
+</a>
+<a target="_blank" href="https://www.facebook.com/profile.php?id=61570597485256" class="btn btn-icon btn-secondary btn-facebook rounded-circle me-3" aria-label="Facebook">
+    <i class="bx bxl-facebook"></i>
+</a>
+<a target="_blank" href="https://phpc.social/@kimai" class="btn btn-icon btn-secondary btn-messenger rounded-circle me-3" aria-label="Mastodon">
+    <i class="bx bxl-mastodon"></i>
+</a>
+
+    </div>
+    <ul class="nav order-md-3">
+        <li class="nav-item">
+            <a href="https://uptime.kimai.cloud/" target="_blank" class="nav-link fs-sm fw-medium">Status</a>
+        </li>
+    </ul>
+    
+</div>
+
+    </div>
+</footer>
+
+
+
+
+<a href="#top" class="btn-scroll-top" data-scroll>
+    <span class="btn-scroll-top-tooltip text-muted fs-sm me-2">Top</span>
+    <i class="btn-scroll-top-icon bx bx-chevron-up"></i>
+</a>
+
+<script src="/assets/build/main.js?v1"></script>
+
+<script async defer src="https://sa.kimai.org/latest.js"></script>
+<noscript><img src="https://sa.kimai.org/noscript.gif" alt="" referrerpolicy="no-referrer-when-downgrade"></noscript>
+
+</body>
+</html>

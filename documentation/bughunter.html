@@ -1,0 +1,549 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="msapplication-TileColor" content="#2d89ef">
+    <meta name="theme-color" content="#4188c9">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="robots" content="index,follow">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://www.kimai.org/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://www.kimai.org/images/icon_32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://www.kimai.org/images/icon_16x16.png">
+    <title>Bughunter – Kimai</title>
+    <link type="application/atom+xml" rel="alternate" href="https://www.kimai.org/feed.xml" title="Kimai Time-Tracking" />
+    <meta property="og:locale" content="en">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Kimai Time-Tracking">
+    <meta property="og:image" content="https://www.kimai.org/images/social-preview.webp">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Kimai Time-Tracking">
+    <meta name="twitter:site" content="@kimai_org">
+    <meta name="twitter:image" content="https://www.kimai.org/images/social-preview.webp">
+    <link href="/assets/build/main.css?v6" rel="stylesheet" />
+</head>
+<body class="">
+
+
+
+
+
+
+
+
+
+
+
+<header class="header navbar navbar-expand bg-light border-bottom border-light shadow fixed-top" data-scroll-header>
+    <div class="container-fluid pe-lg-4">
+        <div class="d-flex align-items-center">
+            <a href="/" class="navbar-brand flex-shrink-0 py-1 py-lg-2">
+                <img src="/images/apple-touch-icon.png" width="32" alt="Kimai logo" class="me-2">
+                Kimai Docs
+            </a>
+            <span class="badge bg-warning">Developer</span>
+        </div>
+        <div class="d-flex align-items-center w-100">
+            <ul class="navbar-nav d-none d-lg-flex" style="padding-left: 6.75rem;">
+                
+                    
+                    
+                    <li class="nav-item">
+                        <a href="/documentation/chapter-manual.html" class="nav-link ">
+                            <i class="bx bx-book opacity-70 fs-lg me-1"></i>
+                            User manual
+                        </a>
+                    </li>
+                
+                    
+                    
+                    <li class="nav-item">
+                        <a href="/documentation/cloud.html" class="nav-link ">
+                            <i class="bx bx-cloud opacity-70 fs-lg me-1"></i>
+                            Kimai-Cloud
+                        </a>
+                    </li>
+                
+                    
+                    
+                    <li class="nav-item">
+                        <a href="/documentation/chapter-on-premise.html" class="nav-link ">
+                            <i class="bx bx-server opacity-70 fs-lg me-1"></i>
+                            On-Premise
+                        </a>
+                    </li>
+                
+                    
+                    
+                    <li class="nav-item">
+                        <a href="/documentation/chapter-developer.html" class="nav-link  active">
+                            <i class="bx bx-code-alt opacity-70 fs-lg me-1"></i>
+                            Developer
+                        </a>
+                    </li>
+                
+            </ul>
+            <button type="button" class="navbar-toggler d-block d-lg-none ms-auto me-4" data-bs-toggle="offcanvas" data-bs-target="#componentsNav" aria-controls="componentsNav" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+    </div>
+</header>
+
+<aside class="bg-dark">
+    <div id="componentsNav" class="offcanvas-lg offcanvas-start d-flex flex-column position-fixed top-0 start-0 vh-100 bg-dark border-end-lg" style="width: 19rem; z-index: 1045;">
+        <div class="offcanvas-header d-none d-lg-flex justify-content-start">
+            <a href="/" class="navbar-brand d-none d-lg-flex py-0">
+                <img src="/images/apple-touch-icon.png" width="26" alt="Kimai logo" class="me-3">
+                Kimai Docs
+            </a>
+        </div>
+        <div class="offcanvas-header d-block d-lg-none border-bottom">
+            <div class="d-flex align-items-center justify-content-between mb-3">
+                <h5 class="d-lg-none mb-0">Menu</h5>
+                <button type="button" class="btn-close d-lg-none" data-bs-dismiss="offcanvas" data-bs-target="#componentsNav" aria-label="Close"></button>
+            </div>
+            <div class="list-group list-group-flush mx-n4">
+                
+                    
+                    
+                    <a href="/documentation/chapter-manual.html" class="list-group-item list-group-item-action d-flex align-items-center border-0 py-1 px-4">
+                        <i class="bx bx-book opacity-70 me-1"></i>
+                        User manual
+                    </a>
+                
+                    
+                    
+                    <a href="/documentation/cloud.html" class="list-group-item list-group-item-action d-flex align-items-center border-0 py-1 px-4">
+                        <i class="bx bx-cloud opacity-70 me-1"></i>
+                        Kimai-Cloud
+                    </a>
+                
+                    
+                    
+                    <a href="/documentation/chapter-on-premise.html" class="list-group-item list-group-item-action d-flex align-items-center border-0 py-1 px-4">
+                        <i class="bx bx-server opacity-70 me-1"></i>
+                        On-Premise
+                    </a>
+                
+                    
+                    
+                    <a href="/documentation/chapter-developer.html" class="list-group-item list-group-item-action d-flex align-items-center border-0 py-1 px-4">
+                        <i class="bx bx-code-alt opacity-70 me-1"></i>
+                        Developer
+                    </a>
+                
+            </div>
+        </div>
+        <div class="offcanvas-body overflow-scroll w-100 p-4">
+            <div class="h-auto docsnavi">
+                
+                    
+                    
+                    
+                    
+                    <p class="fs-lg mb-1 text-white fw-bold">JSON API</p>
+                    <div class="list-group list-group-flush mb-4 me-n4 border-start">
+                        
+                        
+                        
+                        
+                        <a href="/documentation/rest-api.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-rest-api">
+                            
+                            Kimai API
+                            
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="/documentation/rest-api-examples.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-rest-api-examples">
+                            
+                            Examples
+                            
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="/documentation/api-pagination.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-api-pagination">
+                            
+                            Pagination
+                            
+                        </a>
+                        
+                        
+                    </div>
+                    
+                    
+                    
+                    <p class="fs-lg mb-1 text-white fw-bold">Create plugins</p>
+                    <div class="list-group list-group-flush mb-4 me-n4 border-start">
+                        
+                        
+                        
+                        
+                        <a href="/documentation/developers.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-developers">
+                            
+                            Development environment
+                            
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="/documentation/extending-kimai.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-extending-kimai">
+                            
+                            Extending Kimai
+                            
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="/documentation/plugins.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-plugins">
+                            
+                            Create plugins
+                            
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="/documentation/translations.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-translations">
+                            
+                            Translations / i18n
+                            
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="/documentation/meta-fields.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-meta-fields">
+                            
+                            Custom fields
+                            
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="/documentation/theme.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-theme">
+                            
+                            Theme
+                            
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="/documentation/store.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-store">
+                            
+                            Add to store
+                            
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="/documentation/migration-v2.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-migration-v2">
+                            
+                            Migrate plugins to v2
+                            
+                        </a>
+                        
+                        
+                    </div>
+                    
+                    
+                    
+                    <p class="fs-lg mb-1 text-white fw-bold">Technical background</p>
+                    <div class="list-group list-group-flush mb-4 me-n4 border-start">
+                        
+                        
+                        
+                        
+                        <a href="/documentation/bughunter.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2  active" id="docnavi-bughunter">
+                            
+                            Bughunter
+                            
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="/documentation/permission-structure.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-permission-structure">
+                            
+                            Permission structure
+                            
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="/documentation/sql-examples.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-sql-examples">
+                            
+                            SQL Examples
+                            
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="/documentation/redis.html" class="list-group-item ms-2 list-group-item-action border-0 ps-2 " id="docnavi-redis">
+                            
+                            Using Redis for caching
+                            
+                        </a>
+                        
+                        
+                    </div>
+                    
+                    <div class="list-group list-group-flush pb-3 mb-4 mx-n4">
+                
+                    <a href="/" class="list-group-item list-group-item-action border-0 py-1 fs-sm px-4">Kimai Home</a>
+                    <a href="/en/site-notice.html" class="list-group-item list-group-item-action border-0 py-1 fs-sm px-4">Site notice</a>
+                    <a href="/en/privacy-policy.html" class="list-group-item list-group-item-action border-0 py-1 fs-sm px-4">Privacy policy</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</aside>
+<script>
+    document.addEventListener("DOMContentLoaded", function(event) {
+        const dpm = document.getElementById('docnavi-bughunter');
+        if (dpm !== null) {
+            dpm.scrollIntoView({ behavior: "smooth", block: "end", inline: "nearest" });
+        }
+    });
+</script>
+<main class="docs-container pt-5">
+    <div class="container-fluid px-xxl-5 px-lg-4 pt-4 pt-lg-5 pb-2 pb-lg-4">
+
+        <div class="d-sm-flex align-items-end justify-content-between ps-lg-2 ps-xxl-0 mt-2 mt-lg-0 pt-4 mb-n3">
+            <div class="me-4">
+                <h1 class="pb-1">Bughunter</h1>
+                
+            </div>
+            
+
+
+
+
+    <div class="dropdown">
+        <a class="btn btn-outline-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Older versions
+        </a>
+        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuLink">
+            
+            <a class="dropdown-item" href="/documentation/1.30.0/bughunter.html">Kimai 1.30.0</a>
+            
+            
+            <a class="dropdown-item" href="/documentation/bughunter.html">2.28.0 (latest version)</a>
+        </div>
+    </div>
+
+
+        </div>
+
+        <div class="markdown py-5 ps-lg-2 ps-xxl-0">
+            <div>
+                
+                <div id="documentation-content">
+                    <h2 id="reporting">Reporting</h2>
+
+<ul>
+  <li>You can report any security related vulnerability via email to <a href="mailto:support@kimai.org">support@kimai.org</a>, in the <a href="https://github.com/kimai/kimai/security/advisories">advisory section at GitHub</a> or at <a href="https://vuldb.com/">VulDB.com</a>.</li>
+  <li>If you post the advisory on any other platform, I will read them, but I will not respond there.</li>
+  <li>You can expect that your message will be answered in 24-72 hours.</li>
+  <li>I will work as fast as I can to fix the problem and publish a bugfix release / security update. Depending on the size of the required fixes, this might take a couple of hours or a couple of days.</li>
+  <li>If you try to ask for money BEFORE sharing details of a report, you won’t get a reply and your email will be blocked.</li>
+</ul>
+
+<h2 id="rewards">Rewards</h2>
+
+<p>This is an open-source project and I cannot offer a financial bug bounty program.
+The community including myself is grateful for any (discrete) disclosure of vulnerabilities!</p>
+
+<p>You will be mentioned in the release notes if your issue is valid and a fix is shipped. 
+And if you want to be mentioned on social media, I will happily do so as well.</p>
+
+<h2 id="testing">Testing</h2>
+
+<p>Make a good faith effort to avoid privacy violations, destruction of data, and interruption or degradation of our service.
+Only interact with accounts you own or with explicit permission of the account holder.</p>
+
+<h3 id="exclusions">Exclusions</h3>
+
+<p>YOU MAY NOT TEST AGAINST SERVERS YOU DO NOT HAVE EXPLICIT PERMISSION TO TEST.</p>
+
+<p>While researching, please refrain from:</p>
+
+<ul>
+  <li>Denial of service</li>
+  <li>Spamming</li>
+  <li>Social engineering (including phishing)</li>
+</ul>
+
+<p>Do not pentest Kimai-Cloud or Demo installations without prior consent.</p>
+
+<p>There are EU <sup id="fnref:1"><a href="#fn:1" class="footnote" rel="footnote" role="doc-noteref">1</a></sup> and German<sup id="fnref:2"><a href="#fn:2" class="footnote" rel="footnote" role="doc-noteref">2</a></sup> laws that require service owners to report certain attacks to the authorities.
+This makes it difficult to cooperate in scenarios without prior written consent.</p>
+
+<h2 id="i-havent-heard-back-from-you">I haven’t heard back from you</h2>
+
+<p>You have sent a report and did not receive an answer?
+Then you are very likely one of those thousands of “ethical hackers” or “independent security researchers” who are sending out automated emails to every domain they can find. 
+You did not bother to check the bigger picture, you maybe even send an invalid report. Please use your knowledge for the greater good, not to intimidate business/domain owners.</p>
+
+<p>I am not going to waste my time with your “beg report”, as I receive dozens of them every week, and I am not going to answer personally.</p>
+
+<h2 id="common-reports">Common reports</h2>
+
+<p>Some answers to the most common reports that I receive from independent security researchers, which I do <strong>not</strong> consider
+to be security issues in Kimai or behavior that needs to be addressed.</p>
+
+<h3 id="no-dmarc-record-found">No DMARC record found</h3>
+
+<p>Not only does this not qualify (read why <a href="https://dmarcreport.com/blog/no-dmarc-record-found-bug-bounty-is-a-beg-bounty/">at dmarcreport.com</a>), 
+but we are indeed using DMARC, DKIM and SPF in combination to protect our email domain.</p>
+
+<h3 id="misconfigured-spf">Misconfigured SPF</h3>
+
+<p>Whether the soft fail <code class="language-plaintext highlighter-rouge">~all</code> or the fail <code class="language-plaintext highlighter-rouge">-all</code> qualifier is used, is a matter of choice of the server admin.
+The common industry standard recommends using SPF as just one part of the bigger picture and therefor <code class="language-plaintext highlighter-rouge">~all</code> for active and email sending domains.</p>
+
+<p>Besides: we are using DMARC, DKIM and SPF in combination to protect our email domain.</p>
+
+<h3 id="missing-certificate-authority-authorization-rule">Missing Certificate Authority Authorization Rule</h3>
+
+<p>Ok, if you are using automated tests, at least make sure they work.</p>
+
+<ul>
+  <li>it is not a security risk</li>
+  <li>there is a <code class="language-plaintext highlighter-rouge">CAA</code> record with the value <code class="language-plaintext highlighter-rouge">0 issue "letsencrypt.org"</code> in place</li>
+</ul>
+
+<h3 id="website-framing">Website framing</h3>
+
+<p>Being able to frame a website doesn’t necessarily mean, that there is a security threat.</p>
+
+<p>Unless you can prove a clickjacking attack, I do not consider this hypothetical problem to be an issue.</p>
+
+<h3 id="back-button-that-keeps-working-after-logout">“Back” button that keeps working after logout</h3>
+
+<p>I do not consider this as a security risk. If a user leaves his browser unprotected, he has much more to worry about than a colleague
+browsing through the tab history of a browser in which Kimai was open. To me this is a theoretical problem because you need 
+physical access to the machine, which exposes way worse security risks.</p>
+
+<p>Besides, the only known workaround for this behavior is to cache bust each and every page of the application, which is in no way acceptable.</p>
+
+<p>For the full article checkout the <a href="https://bughunters.google.com/learn/invalid-reports/web-platform/navigation/6057503504465920/content-in-cache-after-logout">Google Bughunter University</a>:</p>
+
+<blockquote>
+  <p>Some of the vulnerability reporters notice that, after logging out of a web application but do not close their current browser tab, they are still able to use the “back” button in their browser to access cached documents.</p>
+
+  <p>We generally do not consider this to be a well-defined security risk. In order to access the cached pages, the attacker will need physical access to the targeted login session, or the ability to execute arbitrary code with the current user’s privileges on the system.</p>
+
+  <p>We believe that attackers with this degree of access are firmly outside the security model of contemporary browsers and operating systems, and will be able to extract comparable information from the records persisted in system memory or in the filesystem using off-the-shelf tools; they may also simply modify the system to place a keylogger or other malicious software that collects passwords or cookies, or injects malicious scripts onto every visited page.</p>
+</blockquote>
+
+<h3 id="csv-excel-formula-injection">CSV Excel Formula injection</h3>
+
+<p>Kimai does have a couple of code pieces in place to prevent simple <code class="language-plaintext highlighter-rouge">Dynamic Data Exchange</code> or <code class="language-plaintext highlighter-rouge">DDE payload</code> attacks. 
+But in general I consider this to be a problem of Excel and not Kimai.</p>
+
+<p>A shortened version of <a href="https://bughunters.google.com/learn/invalid-reports/google-products/4965108570390528/csv-formula-injection">Google Bughunter University</a>:</p>
+
+<blockquote>
+  <p>This issue should mitigated by the application which would be importing/interpreting data from an external source, as Microsoft Excel does (for example) by showing a warning.</p>
+
+  <p>In other words, the proper fix should be applied when opening the CSV files, rather then when creating them.</p>
+</blockquote>
+
+<h3 id="logout-works-without-csrf-token">Logout works without CSRF token</h3>
+
+<p>The pure fact that the logout link works without any protection is not a vulnerability.
+If someone manages to get a hold of your Kimai URL and is able to make you open the logout link without knowing (eg. as URL of a hidden image in an email) - you would be logged out.
+That entire scenario is already unlikely, but if it happens it is only annoying.</p>
+
+<p>There are pages like superlogout.com (do not visit!) which will log you out of dozens of popular services.
+All of these linked sites <a href="https://bughunters.google.com/learn/invalid-reports/web-platform/csrf-clickjacking/5072689380982784">do not work against this feature</a> by making it overly-complicated to logout of their website/service.</p>
+
+<p>All in all: I do not consider this to be a security risk.</p>
+
+<h3 id="unverified-password-change">Unverified Password Change</h3>
+
+<p>I am not going to repeat everything that Google has to say about <a href="https://bughunters.google.com/learn/invalid-reports/invalid-attack-scenarios/6576292268605440/attacks-working-only-when-sharing-local-account-with-the-attacker">Attacks working only when sharing local account with the attacker</a>, 
+so please follow the link.</p>
+
+<p>In my words:</p>
+<ul>
+  <li>The account needs to be fully authenticated to work, so “Remember me” session will force a re-login before opening the “change password” page.</li>
+  <li>There is no win asking for the current password, as it can always be recovered by admins or by using the “forgot password” function. Worst case: the only system admin losses access and email is not configured: then it is always possible to using the console application to reset the password.</li>
+  <li>If an attacker gains access to an active user session, there are much bigger risks, like tampering with recorded data.</li>
+</ul>
+
+<p>All in all: I do not consider this to be a security risk, but a UX improvement. Finally, this screenshot:</p>
+
+<figure class="d-block figure mb-3" style="max-width: 700px">
+    <img src="/images/documentation/bughunter/google-password-change.webp" class="figure-img img-fluid rounded" />
+    <figcaption class="figure-caption">Google allows to change my password, without asking for the current password</figcaption>
+</figure>
+
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:1">
+      <p>https://www.consilium.europa.eu/en/policies/cybersecurity/ <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:2">
+      <p>https://www.bsi.bund.de/DE/Themen/Regulierte-Wirtschaft/Weitere_regulierte_Unternehmen/Anbieter_digitaler_Dienste/Meldungen/meldungen_node.html <a href="#fnref:2" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+
+                </div>
+                
+
+                
+            </div>
+        </div>
+
+    </div>
+</main>
+
+
+    <aside class="side-nav side-nav-end d-none d-xxl-block position-fixed top-0 end-0 vh-100 py-5" style="width: 20rem;">
+        <h3 class="fs-lg mt-5 pt-5">Jump to</h3>
+        <ul class="nav" id="jumpToNav"><li class="nav-item"><a href="#reporting" class="nav-link">Reporting</a></li><li class="nav-item"><a href="#rewards" class="nav-link">Rewards</a></li><li class="nav-item"><a href="#testing" class="nav-link">Testing</a><ul><li class="nav-item"><a href="#exclusions" class="nav-link">Exclusions</a></li></ul></li><li class="nav-item"><a href="#i-havent-heard-back-from-you" class="nav-link">I haven’t heard back from you</a></li><li class="nav-item"><a href="#common-reports" class="nav-link">Common reports</a><ul><li class="nav-item"><a href="#no-dmarc-record-found" class="nav-link">No DMARC record found</a></li><li class="nav-item"><a href="#misconfigured-spf" class="nav-link">Misconfigured SPF</a></li><li class="nav-item"><a href="#missing-certificate-authority-authorization-rule" class="nav-link">Missing Certificate Authority Authorization Rule</a></li><li class="nav-item"><a href="#website-framing" class="nav-link">Website framing</a></li><li class="nav-item"><a href="#back-button-that-keeps-working-after-logout" class="nav-link">“Back” button that keeps working after logout</a></li><li class="nav-item"><a href="#csv-excel-formula-injection" class="nav-link">CSV Excel Formula injection</a></li><li class="nav-item"><a href="#logout-works-without-csrf-token" class="nav-link">Logout works without CSRF token</a></li><li class="nav-item"><a href="#unverified-password-change" class="nav-link">Unverified Password Change</a></li></ul></li></ul>
+        
+    </aside>
+
+
+
+<a href="#top" class="btn-scroll-top" data-scroll>
+    <span class="btn-scroll-top-tooltip text-muted fs-sm me-2">Top</span>
+    <i class="btn-scroll-top-icon bx bx-chevron-up"></i>
+</a>
+
+<script src="/assets/build/main.js?v1"></script>
+
+<script async defer src="https://sa.kimai.org/latest.js"></script>
+<noscript><img src="https://sa.kimai.org/noscript.gif" alt="" referrerpolicy="no-referrer-when-downgrade" /></noscript>
+
+</body>
+</html>

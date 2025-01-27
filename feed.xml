@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"
+     xmlns:content="http://purl.org/rss/1.0/modules/content/"
+     xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:atom="http://www.w3.org/2005/Atom"
+     xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+     xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+        >
+    <channel>
+        <title xml:lang="en">Kimai - Open Source Time-Tracking</title>
+        <atom:link type="application/atom+xml" href="http://www.kimai.org/feed.xml" rel="self"/>
+        <link>https://www.kimai.org/</link>
+        <pubDate>Mon, 27 Jan 2025 18:12:05 +0100</pubDate>
+        <lastBuildDate>Mon, 27 Jan 2025 18:12:05 +0100</lastBuildDate>
+        <language>en-US</language>
+        <generator>Jekyll v4.3.4</generator>
+        <description>Time tracking made easy. An open-source solution for teams of all sizes - self-hosted or SaaS.</description>
+        <image>
+            <description>Kimai Logo</description>
+            <url>https://www.kimai.org/images/apple-touch-icon.png</url>
+            <title>Kimai - Open Source Time-Tracking</title>
+            <link>https://www.kimai.org/</link>
+            <width>184</width>
+            <height>184</height>
+        </image>
+        
+            
+            <item>
+                <title>5 Facts About Kimai&apos;s Privacy-First Approach</title>
+                <link>https://www.kimai.org/blog/2025/privacy-facts/</link>
+                <pubDate>Thu, 16 Jan 2025 09:00:00 +0100</pubDate>
+                <dc:creator>valentina</dc:creator>
+                
+                <category>Cloud</category>
+                
+                
+                <guid isPermaLink="true">https://www.kimai.org/blog/2025/privacy-facts/</guid>
+                <description>
+                    <![CDATA[
+                        You know that the big IT corporations say *data is gold*, do you? We believe it's important to protect you!
+                        ...
+                        <a href="https://www.kimai.org/blog/2025/privacy-facts/">read more</a>
+                    ]]>
+                </description>
+            </item>
+            
+        
+            
+            <item>
+                <title>3 million cloud timesheets</title>
+                <link>https://www.kimai.org/blog/2025/thank-you-3-million/</link>
+                <pubDate>Thu, 09 Jan 2025 14:00:00 +0100</pubDate>
+                <dc:creator>valentina</dc:creator>
+                
+                <category>Cloud</category>
+                
+                
+                <guid isPermaLink="true">https://www.kimai.org/blog/2025/thank-you-3-million/</guid>
+                <description>
+                    <![CDATA[
+                        Happy to share that we just hit a major milestone at Kimai: the creation of the 3,000,000th timesheet in the cloud yesterday! 🎉
+                        ...
+                        <a href="https://www.kimai.org/blog/2025/thank-you-3-million/">read more</a>
+                    ]]>
+                </description>
+            </item>
+            
+        
+            
+            <item>
+                <title>Who has the longest public holidays on Christmas</title>
+                <link>https://www.kimai.org/blog/2024/christmas-holidays-2024/</link>
+                <pubDate>Thu, 19 Dec 2024 08:00:00 +0100</pubDate>
+                <dc:creator>valentina</dc:creator>
+                
+                <category>General</category>
+                
+                
+                <guid isPermaLink="true">https://www.kimai.org/blog/2024/christmas-holidays-2024/</guid>
+                <description>
+                    <![CDATA[
+                        As Christmas approaches, many of us look forward to the joy of the season and a well-deserved break. Let's explore how EU members enjoy their public holidays during this festive time in 2024.?
+                        ...
+                        <a href="https://www.kimai.org/blog/2024/christmas-holidays-2024/">read more</a>
+                    ]]>
+                </description>
+            </item>
+            
+        
+            
+            <item>
+                <title>The power of time tracking for software developers</title>
+                <link>https://www.kimai.org/blog/2024/software-developer/</link>
+                <pubDate>Mon, 16 Dec 2024 11:00:00 +0100</pubDate>
+                <dc:creator>valentina</dc:creator>
+                
+                <category>General</category>
+                
+                
+                <guid isPermaLink="true">https://www.kimai.org/blog/2024/software-developer/</guid>
+                <description>
+                    <![CDATA[
+                        Let’s face it: the life of a software developer often feels like a never-ending cycle of meetings, memes about burnout, overtime, and the classic struggles with project managers, testers, customers etc. Sound familiar?
+                        ...
+                        <a href="https://www.kimai.org/blog/2024/software-developer/">read more</a>
+                    ]]>
+                </description>
+            </item>
+            
+        
+            
+            <item>
+                <title>Black Friday for On-Premise users</title>
+                <link>https://www.kimai.org/blog/2024/black-friday/</link>
+                <pubDate>Fri, 29 Nov 2024 05:00:00 +0100</pubDate>
+                <dc:creator>valentina</dc:creator>
+                
+                <category>General</category>
+                
+                
+                <guid isPermaLink="true">https://www.kimai.org/blog/2024/black-friday/</guid>
+                <description>
+                    <![CDATA[
+                        At Kimai, we've always believed in fair and accessible pricing. So here is our Black Friday offer: Kimai's PPP Discount for plugin users!
+                        ...
+                        <a href="https://www.kimai.org/blog/2024/black-friday/">read more</a>
+                    ]]>
+                </description>
+            </item>
+            
+        
+            
+            <item>
+                <title>Support service update</title>
+                <link>https://www.kimai.org/blog/2024/support-via-email/</link>
+                <pubDate>Wed, 27 Nov 2024 09:00:00 +0100</pubDate>
+                <dc:creator>valentina</dc:creator>
+                
+                <category>General</category>
+                
+                
+                <guid isPermaLink="true">https://www.kimai.org/blog/2024/support-via-email/</guid>
+                <description>
+                    <![CDATA[
+                        Kimai's support got a makeover: while our customer Mathias only needed help once for a forgotten password, you can now reach our helpdesk via email!
+                        ...
+                        <a href="https://www.kimai.org/blog/2024/support-via-email/">read more</a>
+                    ]]>
+                </description>
+            </item>
+            
+        
+            
+            <item>
+                <title>European time-tracking law</title>
+                <link>https://www.kimai.org/blog/2024/eu-time-tracking-law/</link>
+                <pubDate>Mon, 11 Nov 2024 09:00:00 +0100</pubDate>
+                <dc:creator>valentina</dc:creator>
+                
+                <category>General</category>
+                
+                
+                <guid isPermaLink="true">https://www.kimai.org/blog/2024/eu-time-tracking-law/</guid>
+                <description>
+                    <![CDATA[
+                        Let's talk about the elephant in the conference room: The EU's Working Time Directive, forcing all employers to use an electronic time-tracking system.
+                        ...
+                        <a href="https://www.kimai.org/blog/2024/eu-time-tracking-law/">read more</a>
+                    ]]>
+                </description>
+            </item>
+            
+        
+            
+            <item>
+                <title>Social media</title>
+                <link>https://www.kimai.org/blog/2024/social-media-accounts/</link>
+                <pubDate>Wed, 10 Apr 2024 20:00:00 +0200</pubDate>
+                <dc:creator>kevinpapst</dc:creator>
+                
+                <category>General</category>
+                
+                
+                <guid isPermaLink="true">https://www.kimai.org/blog/2024/social-media-accounts/</guid>
+                <description>
+                    <![CDATA[
+                        <p>Exciting news!
+We’ve officially joined your favorite socials to bring you even more of what you love.</p>
+
+                        ...
+                        <a href="https://www.kimai.org/blog/2024/social-media-accounts/">read more</a>
+                    ]]>
+                </description>
+            </item>
+            
+        
+            
+            <item>
+                <title>Removing free plan from the cloud</title>
+                <link>https://www.kimai.org/blog/2024/closing-free-plan/</link>
+                <pubDate>Wed, 27 Mar 2024 09:00:00 +0100</pubDate>
+                <dc:creator>kevinpapst</dc:creator>
+                
+                <category>Cloud</category>
+                
+                
+                <guid isPermaLink="true">https://www.kimai.org/blog/2024/closing-free-plan/</guid>
+                <description>
+                    <![CDATA[
+                        <p>Yes! Sad as it is, I’m removing the free plan from the cloud.
+It was a tough decision that had to be made after careful thought as it was causing two problems;</p>
+
+                        ...
+                        <a href="https://www.kimai.org/blog/2024/closing-free-plan/">read more</a>
+                    ]]>
+                </description>
+            </item>
+            
+        
+            
+            <item>
+                <title>Work times plugin for Cloud</title>
+                <link>https://www.kimai.org/blog/2023/update-working-time-account/</link>
+                <pubDate>Sat, 09 Sep 2023 10:00:00 +0200</pubDate>
+                <dc:creator>kevinpapst</dc:creator>
+                
+                <category>Cloud</category>
+                
+                
+                <guid isPermaLink="true">https://www.kimai.org/blog/2023/update-working-time-account/</guid>
+                <description>
+                    <![CDATA[
+                        <p>Today I’m back with the most anticipated and biggest feature update I’ve ever created for Kimai.</p>
+
+                        ...
+                        <a href="https://www.kimai.org/blog/2023/update-working-time-account/">read more</a>
+                    ]]>
+                </description>
+            </item>
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    </channel>
+</rss>

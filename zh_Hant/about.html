@@ -1,0 +1,602 @@
+<!doctype html>
+<html lang="zh_Hant" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="msapplication-TileColor" content="#2d89ef">
+    <meta name="theme-color" content="#4188c9">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="robots" content="index,follow">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://www.kimai.tw/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://www.kimai.tw/images/icon_32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://www.kimai.tw/images/icon_16x16.png">
+    <title>關於 Kimai</title>
+    <meta name="description" content="探索 Kimai 工時追蹤工具及其開發者的背景故事。">
+    <meta property="og:description" content="探索 Kimai 工時追蹤工具及其開發者的背景故事。">
+    <meta name="twitter:description" content="探索 Kimai 工時追蹤工具及其開發者的背景故事。">
+    
+    <meta property="og:locale" content="zh_Hant">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Kimai Time-Tracking">
+    <meta property="og:image" content="https://www.kimai.tw/images/social-preview.webp">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Kimai Time-Tracking">
+    <meta name="twitter:site" content="@kimai_org">
+    <meta name="twitter:image" content="https://www.kimai.tw/images/social-preview.webp">
+    <link rel="alternate" hreflang="en" href="https://www.kimai.org/en/about.html">
+    <link rel="alternate" hreflang="cs" href="https://www.kimai.org/cs/about.html">
+    <link rel="alternate" hreflang="de" href="https://www.kimai.org/de/about.html">
+    <link rel="alternate" hreflang="es" href="https://www.kimai.org/es/about.html">
+    <link rel="alternate" hreflang="fr" href="https://www.kimai.org/fr/about.html">
+    <link rel="alternate" hreflang="he" href="https://www.kimai.co.il/about.html">
+    <link rel="alternate" hreflang="hr" href="https://www.kimai.org/hr/about.html">
+    <link rel="alternate" hreflang="it" href="https://www.kimai.org/it/about.html">
+    <link rel="alternate" hreflang="nl" href="https://www.kimai.org/nl/about.html">
+    <link rel="alternate" hreflang="pl" href="https://www.kimai.org/pl/about.html">
+    <link rel="alternate" hreflang="pt" href="https://www.kimai.org/pt/about.html">
+    <link rel="alternate" hreflang="pt-br" href="https://www.kimai.org/pt_BR/about.html">
+    <link rel="alternate" hreflang="ru" href="https://www.kimai.org/ru/about.html">
+    <link rel="alternate" hreflang="sk" href="https://www.kimai.org/sk/about.html">
+    <link rel="alternate" hreflang="sv" href="https://www.kimai.org/sv/about.html">
+    <link rel="alternate" hreflang="uk" href="https://www.kimai.org/uk/about.html">
+    <link rel="alternate" hreflang="zh-hans" href="https://www.kimai.org/zh_Hans/about.html">
+    <link rel="alternate" hreflang="zh-hant" href="https://www.kimai.tw/about.html">
+    <link href="/assets/build/main.css?v6" rel="stylesheet" />
+</head>
+<body class="">
+
+<main class="page-wrapper">
+    
+
+
+
+
+
+
+
+
+
+
+
+<header class="header navbar navbar-expand-lg    bg-light navbar-sticky">
+    <div class="container px-3">
+        
+        <a href="/" class="navbar-brand pe-3">
+        <img src="/images/kimai_logo_48.webp" style="height:36px;width:36px;" alt="Kimai —— 開放源始碼的工時追蹤工具"> Kimai
+        </a>
+        <div id="navbarNav" class="offcanvas offcanvas-end">
+            <div class="offcanvas-header border-bottom">
+                <h5 class="offcanvas-title">Menu</h5>
+                <button type="button" class="btn-close " data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    
+                    <li class="nav-item">
+                        <a href="/demo.html" class="nav-link">體驗</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a href="/pricing" class="nav-link">收費</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-current="page">社群</a>
+                        <ul class="dropdown-menu">
+                            
+                            <li><a href="/store/" class="dropdown-item"><i class="bx bx-extension me-2"></i>外掛程式</a></li>
+                            <li><a href="/download.html" class="dropdown-item"><i class="bx bxl-docker me-2"></i>安裝</a></li>
+                            <li><a href="/blog/" class="dropdown-item"><i class="bx bx-news me-2"></i>部落格</a></li>
+                            <li><a href="https://github.com/kimai/kimai/discussions" target="_blank" class="dropdown-item"><i class="bx bx-chat me-2"></i>討論區</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-current="page">說明文件</a>
+                        <ul class="dropdown-menu">
+                            
+                            
+                            
+                            <li><a href="https://www.kimai.org/documentation/chapter-manual.html" class="dropdown-item">
+                                <i class="bx bx-book me-2"></i>
+                                
+                                使用指南
+                            </a></li>
+                            
+                            
+                            
+                            <li><a href="https://www.kimai.org/documentation/cloud.html" class="dropdown-item">
+                                <i class="bx bx-cloud me-2"></i>
+                                
+                                雲端服務
+                            </a></li>
+                            
+                            
+                            
+                            <li><a href="https://www.kimai.org/documentation/chapter-on-premise.html" class="dropdown-item">
+                                <i class="bx bx-server me-2"></i>
+                                
+                                自架服務
+                            </a></li>
+                            
+                            
+                            
+                            <li><a href="https://www.kimai.org/documentation/chapter-developer.html" class="dropdown-item">
+                                <i class="bx bx-code-alt me-2"></i>
+                                
+                                開發指南
+                            </a></li>
+                            
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="pe-lg-1 ms-auto me-2">
+            
+
+
+
+<a href="https://www.kimai.cloud/auth/" class="btn btn-sm fs-sm d-none d-md-inline-flex me-2 btn-outline-secondary">登入</a>
+
+            
+
+
+
+<a href="https://www.kimai.cloud/auth/registration" class="btn btn-success btn-sm fs-sm d-inline-flex">免費開始</a>
+
+        </div>
+        <button type="button" class="navbar-toggler" data-bs-toggle="offcanvas" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </div>
+</header>
+
+
+    
+<section class="container mb-5 pt-md-1 pt-lg-4 pt-xl-5">
+    <div class="mt-4 py-2 pb-sm-3 pb-md-4 pb-lg-5 mx-auto text-center" style="max-width: 46.625rem;">
+        <h1 class="h1 mb-4">
+            關於 Kimai
+        </h1>
+        <p class="mb-4">從一項業餘愛好專案，到現在的世界領先的開放源始碼工時追蹤應用程式。讓我們來瞭解它的歷史。</p>
+    </div>
+
+    <div class="steps steps-center steps-sm steps-horizontal-lg" style="--si-steps-number-size-sm: 1.5rem; --si-steps-number-inner-size-sm: 1rem; --si-steps-number-bg: rgba(99,102,241,.2); --si-steps-number-inner-bg: #6366f1;">
+
+        <div class="step">
+            <div class="step-number"><div class="step-number-inner"></div></div>
+            <div class="step-body">
+                <h3 class="mb-3">2018</h3>
+                <p class="mb-0">經過重寫的 Kimai 獲社群採用，資料移轉成功，使用率正在上升。</p>
+            </div>
+        </div>
+
+        <div class="step">
+            <div class="step-number"><div class="step-number-inner"></div></div>
+            <div class="step-body">
+                <h3 class="mb-3">2019</h3>
+                <p class="mb-0">建立了第一批外掛程式，以測試付費開放源始碼軟體對使用者的吸引力。</p>
+            </div>
+        </div>
+
+        <div class="step">
+            <div class="step-number"><div class="step-number-inner"></div></div>
+            <div class="step-body">
+                <h3 class="mb-3">2020</h3>
+                <p class="mb-0">Kimai 推出訂閱制的 SaaS 型式的服務，提供一套免費方案與兩套付費方案。</p>
+            </div>
+        </div>
+
+        <div class="step">
+            <div class="step-number"><div class="step-number-inner"></div></div>
+            <div class="step-body">
+                <h3 class="mb-3">2023</h3>
+                <p class="mb-0">辛勞的付出終將有所回報，Kimai 現在已成為我的 100% 全職工作。感謝您！</p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section class="container mb-5 py-md-3 py-lg-4 py-xl-5">
+    <img src="/images/kimai_logo.webp" class="float-sm-end" style="margin-left: 20px" alt="Kimai logo">
+    <p>Kimai 是一款有著長遠歷史的工時追蹤軟體，第一個版本早在 2006 年就發佈了。為什麼我要提到這個呢？因為我已看過許多類似的專案時來時去——相信我，Kimai 會留下來。多年以來，開發 Kimai 是我的興趣；現在，Kimai 是我的事業，我從未像現在這麼有動力地不斷改進它。</p>
+
+<p>我建構 Kimai 的目的只有一個：記錄、管理、評估、與核算工作時間。Kimai 支援無上限的使用者、客戶、專案、與工時紀錄項目，在一個安裝實例中就能夠輕易管理所有團隊。Kimai 已被翻譯為數十種語言，可以在任何具有網路存取與瀏覽器的裝置上執行，藉助了回應式設計，甚至在路途中時也可在您的行動裝置上執行。</p>
+
+<p>您可以在瀏覽器中使用可自訂的收支單模版，根據工時單直接建立收支單。Kimai 還可以透過多種方式進行擴充，特別是由活躍的社群所建立的許多外掛程式。</p>
+
+<p>無論您是自由工作者、小型組織、還是擁有數百名員工的公司，Kimai 都能夠幫助您管理業務。請依您的心意決定並利用體驗版本測試 Kimai。</p>
+
+</section>
+
+<section class="bg-secondary pb-5 pt-md-1 pt-lg-4 pt-xl-5">
+    <div class="container py-2 py-md-3 py-lg-4 py-xl-5">
+        <div class="row justify-content-center pb-sm-3 pb-md-4 pb-lg-5">
+            <div class="col-md-10 col-lg-8 text-center">
+                <h2 class="h1 mb-4">誰在開發 Kimai？</h2>
+                <p>Kimai 與 Kimai Cloud 由來自奧地利維也納的獨立軟體開發者 Kevin 開發與運營。</p>
+            </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-2 gx-3 gx-lg-4 pb-sm-3 pb-md-4 pb-lg-5">
+            <div class="col-md-4">
+                <div class="position-relative d-flex h-100">
+                    <div class="position-absolute top-0 start-0 w-100 h-100 rounded-3 bg-size-cover bg-repeat-0 bg-position-center" style="background-image: url(/images/kevin-papst.webp);"></div>
+                </div>
+            </div>
+            <div class="col-md-8">
+                <figure class="card position-relative border-0 shadow-sm py-3 p-0 p-lg-4 mt-4 mb-0 ms-xl-5">
+                    <span class="btn btn-icon btn-primary btn-lg shadow-primary pe-none position-absolute top-0 start-0 translate-middle-y ms-4 ms-lg-5">
+                        <i class="bx bxs-quote-left"></i>
+                    </span>
+                    <div class="card-body mt-2 mb-0">
+                        <p class="fs-lg">
+                        
+                            </p>
+<p>能夠靠開源產品維生一直是我的夢想。透過創造 Kimai，我得以開發出提供客戶重大幫助的軟體，這成為我日復一日工作的動力。</p>
+
+<p>對於廣大的社群多年來的忠實支持，我感激不盡，也期待著與 Kimai 一同迎接下一個十年🚀</p>
+
+                        
+                        
+                    </div>
+                    <figcaption class="card-footer border-0 d-sm-flex pt-0 mt-n3 mt-lg-0">
+                        <div class="d-flex align-items-center border-end-sm pe-sm-4 me-sm-4">
+                            <img src="/images/kevin-papst.webp" width="48" class="d-md-none rounded-circle" alt="Ralph Edwards">
+                            <div class="ps-3 ps-md-0">
+                                <h5 class="fw-semibold lh-base mb-0">Kevin Papst</h5>
+                                <span class="fs-sm text-muted">Building Kimai since 2009</span>
+                            </div>
+                        </div>
+                        <p class="d-block my-1 ms-5 mt-sm-0 ms-sm-0">
+                            
+                            <a href="https://www.kevinpapst.de" class="btn btn-icon btn-secondary btn-dribbble btn-lg me-1" role="button" target="_blank">
+                                <i class="bx bx-home"></i>
+                            </a>
+                            
+                            
+                            <a href="https://twitter.com/keleo" class="btn btn-icon btn-secondary btn-twitter btn-lg me-1" role="button" target="_blank">
+                                <i class="bx bxl-twitter"></i>
+                            </a>
+                            
+                            
+                            <a href="https://github.com/sponsors/kevinpapst" class="btn btn-icon btn-secondary btn-github btn-lg me-1" role="button" target="_blank">
+                                <i class="bx bxl-github"></i>
+                            </a>
+                            
+                            
+                            <a href="https://www.paypal.me/kevinpapst" class="btn btn-icon btn-secondary btn-linkedin btn-lg me-1" role="button" target="_blank">
+                                <i class="bx bxl-paypal"></i>
+                            </a>
+                            
+                            
+                            <a href="https://www.amazon.de/hz/wishlist/ls/MY4BEJ8I4CI9/" class="btn btn-icon btn-secondary btn-stack-overflow btn-lg me-1" role="button" target="_blank">
+                                <i class="bx bxl-amazon"></i>
+                            </a>
+                            
+                        </p>
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col-md-4">
+                <div class="feature">
+                    <p class="fs-5">協作</p>
+                    <p>客戶讚賞我們所提供的免費支援服務的便利，這種互動是我們業務不可或缺的核心。我很喜歡在 GitHub 上的社群交流、協作、與快節奏的開發工作。憑藉各位的寶貴反饋，我們長期不斷改進，使這段過程更加卓越非凡。</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="feature">
+                    <p class="fs-5">技術</p>
+                    <p>身為開發者，我熱衷於測試新技術。如果這能改進您與 Kimai 的互動方式，我會認為這是雙贏。UI 與 UX 對我來說至關重要，因為軟體必須易於使用。資訊安全是基本要求，而開源軟體對許多企業來說是成功的關鍵因素。</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="feature">
+                    <p class="fs-5">工作的樂趣</p>
+                    <p>Kimai 的開發是我喜愛的職業、無限可能的教育、與養家餬口的需要的理想結合。多虧了 Kimai，我有了更多時間與妻兒相處，這或許是您所能想到的最好的動力。</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="pb-5 pt-md-1 pt-lg-4 pt-xl-5 mb-5">
+    <div class="container py-2 py-md-3 py-lg-4 py-xl-5">
+        <div class="mt-4 py-2 pb-sm-3 pb-md-4 pb-lg-5 mx-auto text-center" style="max-width: 46.625rem;">
+            <h2 class="h1 mb-4">Kimai 的源起</h2>
+            <p class="mb-4">Kimai 有著長遠的歷史，從 2006 年存在至今，以下將簡單介紹它的源起。</p>
+        </div>
+
+        <div class="steps steps-center steps-sm steps-horizontal-lg" style="--si-steps-number-size-sm: 1.5rem; --si-steps-number-inner-size-sm: 1rem; --si-steps-number-bg: rgba(99,102,241,.2); --si-steps-number-inner-bg: #6366f1;">
+            <div class="step">
+                <div class="step-number"><div class="step-number-inner"></div></div>
+                <div class="step-body">
+                    <h3 class="mb-3">2006</h3>
+                    <p class="mb-0">Kimai 的第一個版本發佈，並逐漸獲得愈來愈多的使用者與開發者。</p>
+                </div>
+            </div>
+
+            <div class="step">
+                <div class="step-number"><div class="step-number-inner"></div></div>
+                <div class="step-body">
+                    <h3 class="mb-3">2009</h3>
+                    <p class="mb-0">最初的開發者 Torsten 想終止 Kimai 的開發。Kevin 接手並成為維護者。</p>
+                </div>
+            </div>
+
+            <div class="step">
+                <div class="step-number"><div class="step-number-inner"></div></div>
+                <div class="step-body">
+                    <h3 class="mb-3">2014</h3>
+                    <p class="mb-0">發佈 Kimai 1 的最後一個版本，開發停滯且消極。</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container py-2 py-md-3 py-lg-4 py-xl-5">
+        <p>Kimai 有著長遠的歷史，當 Torsten Höltge 的團隊在 2006 年開始開發時，它就已經遠遠領先於時代。當它開始採用回應式設計（藉助於大量的 JavaScript 魔法）的時候，這個詞甚至還沒被正式發明。
+2009 年，當時 Torsten 因為時間不足而想終止開發，因此我接手了 Kimai 的開發，之後我在其他開源愛好者的協助下維護並擴充了 Kimai 數年。</p>
+
+<p>在此同時，PHP 社群正取得長足的進步，而 Kimai 卻由於其歷史的原因而愈來愈落後。它的程式碼基礎存在著許多技術弱點，在多年的發展之後，已變得愈來愈難維護。
+用現代化的框架重寫 Kimai 的想法已經存在了一段時間，同時受到了社群請求的推動，但一直沒有人有資源來推進這個想法。2017 年底，在多種因素結合之下，我抓住了時機開始開發革命性的下一步，「Kimai 2」。</p>
+
+<p>最初的 Kimai 版本在 2006 年首次發佈，並已由世界各地的許多人所使用，我為此及其廣大的社群而自豪。感謝所有為 Kimai 作出頁獻的人。</p>
+
+        <p>
+            <a href="/blog/tags-version-1.html" class="btn btn-outline-primary">
+                取得有關 Kimai 1 的較早消息
+                <i class="bx bx-right-arrow-alt ms-1 fs-lg"></i>
+            </a>
+        </p>
+    </div>
+</section>
+
+<section class="container mb-5">
+    <div class="position-relative bg-dark rounded-3 overflow-hidden px-3 py-5">
+        <span class="position-absolute top-0 start-0 w-100 h-100" style="background-color: rgba(255, 255, 255, .05)"></span>
+        <div class="position-relative zindex-5 text-center my-xl-3 py-1 py-md-4 py-lg-5">
+            <p class="lead text-light opacity-70 mb-3">準備好開始了嗎？</p>
+            <h2 class="h1 text-light pb-3 pb-lg-0 mb-lg-5">開始您的工時追蹤之旅</h2>
+            
+            
+            
+
+
+
+<a href="https://www.kimai.cloud/auth/registration" class="btn btn-success btn-lg">免費開始</a>
+
+        </div>
+    </div>
+</section>
+
+
+</main>
+
+
+
+
+
+
+
+
+
+<footer class="footer bg-dark pt-5 pb-4">
+    <div class="container pt-1 pt-md-3 pt-lg-4 pt-xl-5">
+        <div class="row">
+            <div class="col-md-5 col-xl-4 mb-4 mb-md-5 mb-lg-0">
+                <div class="d-flex align-items-center pb-3 mb-1">
+                    <div class="navbar-brand text-white p-0 pe-1 me-0">
+                        Kimai
+                    </div>
+                    <hr class="vr mt-2 mx-3" style="height: 26px;">
+                    <div class="text-white fw-semibold ps-1">開源的追蹤工時首選工具</div>
+                </div>
+                <p class="text-body fs-sm pb-1 pb-md-2 pb-lg-2 mb-2">
+                    自由且易於使用的工時追蹤工具，適用於自由工作者、機構、與公司。Kimai 是款開源軟體，可供自架服務或以 SaaS 型式使用。
+                </p>
+                <div class="d-flex flex-column flex-sm-row flex-lg-column align-items-sm-center align-items-lg-start justify-content-between pb-1 pb-md-2 pb-lg-3 mb-3">
+                    <div class="position-relative">
+                        <div class="dropdown">
+                            <button type="button" class="form-select" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="bx bx-globe top-50 start-0 text-body me-2"></i>
+                                中文（繁體）
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-end">
+                                
+                                    <a dir="ltr" href="https://www.kimai.org/cs/" class="dropdown-item" title="Kimai - Open Source sledování času">Čeština</a>
+                                
+                                    <a dir="ltr" href="https://www.kimai.org/de/" class="dropdown-item" title="Kimai - Open Source Zeiterfassung">Deutsch</a>
+                                
+                                    <a dir="ltr" href="https://www.kimai.org" class="dropdown-item" title="Kimai - Open Source time-tracker">English</a>
+                                
+                                    <a dir="ltr" href="https://www.kimai.org/es/" class="dropdown-item" title="Página de inicio de Kimai">Español</a>
+                                
+                                    <a dir="ltr" href="https://www.kimai.org/fr/" class="dropdown-item" title="Kimai - Suivi du temps à code ouvert">Français</a>
+                                
+                                    <a dir="rtl" href="https://www.kimai.co.il" class="dropdown-item" title="Kimai - מעקב שעות בקוד פתוח">עברית</a>
+                                
+                                    <a dir="ltr" href="https://www.kimai.org/hr/" class="dropdown-item" title="Kimai – Program otvorenog koda za evidentiranje vremena">Hrvatski</a>
+                                
+                                    <a dir="ltr" href="https://www.kimai.org/it/" class="dropdown-item" title="Kimai: time-tracker open source">Italiano</a>
+                                
+                                    <a dir="ltr" href="https://www.kimai.org/nl/" class="dropdown-item" title="Kimai - Open Source tijdregistratie">Nederlands</a>
+                                
+                                    <a dir="ltr" href="https://www.kimai.org/pl/" class="dropdown-item" title="Kimai - Otwarte oprogramowanie do śledzenia czasu">Polski</a>
+                                
+                                    <a dir="ltr" href="https://www.kimai.org/pt/" class="dropdown-item" title="Kimai - Rastreador de tempo de código aberto">Português</a>
+                                
+                                    <a dir="ltr" href="https://www.kimai.org/pt_BR/" class="dropdown-item" title="Kimai - Rastreador de tempo de código aberto">Português (Brasil)</a>
+                                
+                                    <a dir="ltr" href="https://www.kimai.org/ru/" class="dropdown-item" title="Kimai - регистратор времени с открытым исходным кодом">Русский</a>
+                                
+                                    <a dir="ltr" href="https://www.kimai.org/sk/" class="dropdown-item" title="Kimai - Open Source sledovanie času">Slovenčina</a>
+                                
+                                    <a dir="ltr" href="https://www.kimai.org/sv/" class="dropdown-item" title="Kimai - öppen källkod tidsspårare">Svenska</a>
+                                
+                                    <a dir="ltr" href="https://www.kimai.org/uk/" class="dropdown-item" title="Kimai — реєстратор часу з відкритим сирцевим кодом">Українська</a>
+                                
+                                    <a dir="ltr" href="https://www.kimai.org/zh_Hans/" class="dropdown-item" title="Kimai - 开源时间跟踪器">中文（中国）</a>
+                                
+                                    <a dir="ltr" href="https://www.kimai.tw" class="dropdown-item active" title="Kimai —— 開放源始碼的工時追蹤工具">中文（繁體）</a>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="col-md-7 offset-xl-1">
+                <div id="footer-links" class="row">
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <h6 class="fs-lg mb-1 mb-md-2">
+                            <span class="d-none d-md-block">Company</span>
+                            <a href="#tools" class="d-block text-white dropdown-toggle d-md-none py-2" data-bs-toggle="collapse">Company</a>
+                        </h6>
+                        <div id="tools" class="collapse d-md-block" data-bs-parent="#footer-links">
+                            <ul class="nav flex-column">
+                                <li class="nav-item">
+                                    <a href="/about.html" class="nav-link fs-sm fw-medium px-0 py-1">關於 Kimai</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="/features.html" class="nav-link fs-sm fw-medium px-0 py-1">功能特色</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="/support.html" class="nav-link fs-sm fw-medium px-0 py-1">技術支援</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="/reviews" class="nav-link fs-sm fw-medium px-0 py-1">使用評論</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="https://www.kimai.org/en/kimai-discount-codes" class="nav-link fs-sm fw-medium px-0 py-1">折扣優惠</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <h6 class="fs-lg mb-1 mb-md-2">
+                            <span class="d-none d-md-block">Kimai for</span>
+                            <a href="#landing-kimai-for" class="d-block text-white dropdown-toggle d-md-none py-2" data-bs-toggle="collapse">Kimai</a>
+                        </h6>
+                        <div id="landing-kimai-for" class="collapse d-md-block" data-bs-parent="#footer-links">
+                            <ul class="nav flex-column">
+                                <li class="nav-item">
+                                    <a href="https://www.kimai.org/en/time-tracking-non-profit.html" class="nav-link fs-sm fw-medium px-0 py-1">非營利組織</a>
+                                </li>
+                                
+                                
+                                <li class="nav-item">
+                                    <a href="https://www.kimai.org/en/agency-time-tracking" class="nav-link fs-sm fw-medium px-0 py-1" title="Time-tracking for Time Tracking For Agencies">Agencies</a>
+                                </li>
+                                
+                                <li class="nav-item">
+                                    <a href="https://www.kimai.org/en/consultants-time-tracking" class="nav-link fs-sm fw-medium px-0 py-1" title="Time-tracking for Time Tracking For Consultants">Consultants</a>
+                                </li>
+                                
+                                <li class="nav-item">
+                                    <a href="https://www.kimai.org/en/software-developers-time-tracking" class="nav-link fs-sm fw-medium px-0 py-1" title="Time-tracking for Time Tracking For Software Developers">Software Developers</a>
+                                </li>
+                                
+                                <li class="nav-item">
+                                    
+                                    <a href="https://www.kimai.org/en/industry" class="nav-link fs-sm fw-medium px-0 py-1">More industries</a>
+                                </li>                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <h6 class="fs-lg mb-1 mb-md-2">
+                            <span class="d-none d-md-block">比較</span>
+                            <a href="#footer-cmp" class="d-block text-white dropdown-toggle d-md-none py-2" data-bs-toggle="collapse">比較</a>
+                        </h6>
+                        <div id="footer-cmp" class="collapse d-md-block" data-bs-parent="#footer-links">
+                            <ul class="nav flex-column">
+                                <li class="nav-item">
+                                    <a href="/compare/" class="nav-link fs-sm fw-medium px-0 py-1">比較各種工時追蹤工具</a>
+                                </li>
+                                
+                                
+                                    <li class="nav-item">
+                                        <a href="https://www.kimai.org/en/clockify-alternative" class="nav-link fs-sm fw-medium px-0 py-1" title="Compare Kimai to Clockify">Clockify</a>
+                                    </li>
+                                
+                                    <li class="nav-item">
+                                        <a href="https://www.kimai.org/en/openproject-alternative" class="nav-link fs-sm fw-medium px-0 py-1" title="Compare Kimai to OpenProject">OpenProject</a>
+                                    </li>
+                                
+                                    <li class="nav-item">
+                                        <a href="https://www.kimai.org/en/toggl-alternative" class="nav-link fs-sm fw-medium px-0 py-1" title="Compare Kimai to toggl track">toggl track</a>
+                                    </li>
+                                
+                                
+                            </ul>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="d-md-flex align-items-center justify-content-between pt-sm-2 pt-md-4 pt-lg-5 pb-2 mt-4 ">
+    <ul class="nav order-md-1 ms-md-0 mb-3 mb-md-0">
+        <li class="nav-item">
+            <a href="/site-notice.html" class="nav-link fs-sm fw-medium">網站告示</a>
+        </li>
+        <li class="nav-item">
+            <a href="/privacy-policy.html" class="nav-link fs-sm fw-medium">隱私政策</a>
+        </li>
+        <li class="nav-item">
+            <a href="/terms-cloud.html" class="nav-link fs-sm fw-medium">Terms</a>
+        </li>
+    </ul>
+    <div class="nav order-md-2 mb-3 mb-md-0">
+        <a target="_blank" href="https://github.com/kimai/kimai" class="btn btn-icon btn-secondary btn-github rounded-circle me-3" aria-label="GitHub">
+    <i class="bx bxl-github"></i>
+</a>
+<a target="_blank" href="https://www.youtube.com/@kimai_org" class="btn btn-icon btn-secondary btn-youtube rounded-circle me-3" aria-label="YouTube">
+    <i class="bx bxl-youtube"></i>
+</a>
+<a target="_blank" href="https://www.linkedin.com/company/kimai-timetracker/" class="btn btn-icon btn-secondary btn-linkedin rounded-circle me-3" aria-label="LinkedIn">
+    <i class="bx bxl-linkedin"></i>
+</a>
+<a target="_blank" href="https://www.instagram.com/kimai_org" class="btn btn-icon btn-secondary btn-instagram rounded-circle me-3" aria-label="Instagram">
+    <i class="bx bxl-instagram"></i>
+</a>
+<a target="_blank" href="https://twitter.com/kimai_org" class="btn btn-icon btn-secondary btn-twitter rounded-circle me-3" aria-label="Twitter / X">
+    <i class="bx bxl-twitter"></i>
+</a>
+<a target="_blank" href="https://www.facebook.com/profile.php?id=61570597485256" class="btn btn-icon btn-secondary btn-facebook rounded-circle me-3" aria-label="Facebook">
+    <i class="bx bxl-facebook"></i>
+</a>
+<a target="_blank" href="https://phpc.social/@kimai" class="btn btn-icon btn-secondary btn-messenger rounded-circle me-3" aria-label="Mastodon">
+    <i class="bx bxl-mastodon"></i>
+</a>
+
+    </div>
+    <ul class="nav order-md-3">
+        <li class="nav-item">
+            <a href="https://uptime.kimai.cloud/" target="_blank" class="nav-link fs-sm fw-medium">雲端狀態</a>
+        </li>
+    </ul>
+    
+</div>
+
+    </div>
+</footer>
+
+
+
+
+<a href="#top" class="btn-scroll-top" data-scroll>
+    <span class="btn-scroll-top-tooltip text-muted fs-sm me-2">Top</span>
+    <i class="btn-scroll-top-icon bx bx-chevron-up"></i>
+</a>
+
+<script src="/assets/build/main.js?v1"></script>
+
+<script async defer src="https://sa.kimai.org/latest.js"></script>
+<noscript><img src="https://sa.kimai.org/noscript.gif" alt="" referrerpolicy="no-referrer-when-downgrade"></noscript>
+
+</body>
+</html>
